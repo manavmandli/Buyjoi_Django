@@ -1,0 +1,1045 @@
+OSError: LSAPI: File error
+OSError: LSAPI: File error
+OSError: LSAPI: File error
+OSError: LSAPI: File error
+OSError: LSAPI: File error
+/home/buyjclsn/ecom/buyjoi/views.py:102: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+[UID:1507][108639] Reached max children process limit: 6, extra: 2, current: 8, busy: 4, please increase LSAPI_CHILDREN.
+[UID:1507][108639] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1507][108639] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1507][108639] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1507][108639] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1507][108639] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1507][108639] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1507][108639] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1507][108639] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1507][801306] Reached max children process limit: 6, extra: 2, current: 8, busy: 4, please increase LSAPI_CHILDREN.
+[UID:1507][801306] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1507][801306] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1507][801306] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1507][801306] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1507][801306] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1507][801306] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1507][801306] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1507][801306] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1507][801306] Reached max children process limit: 6, extra: 2, current: 8, busy: 5, please increase LSAPI_CHILDREN.
+[UID:1507][801306] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1507][801306] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1507][801306] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1507][801306] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1507][801306] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1507][801306] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1507][801306] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1507][801306] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1507][801306] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1507][801306] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1507][801306] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1507][801306] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1507][929759] Reached max children process limit: 6, extra: 2, current: 8, busy: 4, please increase LSAPI_CHILDREN.
+[UID:1507][929759] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1507][929759] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1507][929759] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1507][929759] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1507][929759] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1507][929759] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1507][929759] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1507][929759] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1507][929759] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1507][929759] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1507][929759] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1507][929759] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1507][929759] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1507][929759] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1507][929759] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1507][929759] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1507][929759] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1507][929759] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1507][929759] Reached max children process limit: 6, extra: 2, current: 8, busy: 4, please increase LSAPI_CHILDREN.
+[UID:1507][929759] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1507][929759] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1507][929759] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1507][929759] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1507][929759] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1507][929759] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1507][929759] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1507][929759] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1507][929759] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1507][929759] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+OSError: LSAPI: File error
+OSError: LSAPI: File error
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:90: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:102: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:126: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:138: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:90: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:102: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:153: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:30: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:42: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:54: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:66: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:78: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:114: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:126: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:138: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:90: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:102: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:126: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:138: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+[UID:1507][1382636] Reached max children process limit: 6, extra: 2, current: 8, busy: 5, please increase LSAPI_CHILDREN.
+[UID:1507][1382636] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1507][1382636] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1507][1382636] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1507][1382636] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1507][1382636] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1507][1382636] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1507][1382636] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1507][1382636] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1507][1382636] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:90: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:102: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:126: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:138: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:153: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:30: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:42: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:54: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:66: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:78: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:114: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:90: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:102: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:126: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:138: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:30: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:30: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:126: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:138: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:30: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:30: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:90: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:102: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:90: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:90: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+[UID:1507][2018544] Reached max children process limit: 6, extra: 2, current: 8, busy: 6, please increase LSAPI_CHILDREN.
+[UID:1507][2018544] Reached max children process limit: 6, extra: 2, current: 8, busy: 5, please increase LSAPI_CHILDREN.
+[UID:1507][2018544] Reached max children process limit: 6, extra: 2, current: 8, busy: 4, please increase LSAPI_CHILDREN.
+[UID:1507][2018544] Reached max children process limit: 6, extra: 2, current: 8, busy: 4, please increase LSAPI_CHILDREN.
+[UID:1507][2018544] Reached max children process limit: 6, extra: 2, current: 8, busy: 4, please increase LSAPI_CHILDREN.
+[UID:1507][2018544] Reached max children process limit: 6, extra: 2, current: 8, busy: 3, please increase LSAPI_CHILDREN.
+[UID:1507][2018544] Reached max children process limit: 6, extra: 2, current: 8, busy: 3, please increase LSAPI_CHILDREN.
+[UID:1507][2018544] Reached max children process limit: 6, extra: 2, current: 8, busy: 2, please increase LSAPI_CHILDREN.
+[UID:1507][2018544] Reached max children process limit: 6, extra: 2, current: 8, busy: 2, please increase LSAPI_CHILDREN.
+[UID:1507][2018544] Reached max children process limit: 6, extra: 2, current: 8, busy: 2, please increase LSAPI_CHILDREN.
+[UID:1507][2018544] Reached max children process limit: 6, extra: 2, current: 8, busy: 3, please increase LSAPI_CHILDREN.
+[UID:1507][2018544] Reached max children process limit: 6, extra: 2, current: 8, busy: 4, please increase LSAPI_CHILDREN.
+[UID:1507][2018544] Reached max children process limit: 6, extra: 2, current: 8, busy: 4, please increase LSAPI_CHILDREN.
+[UID:1507][2018544] Reached max children process limit: 6, extra: 2, current: 8, busy: 5, please increase LSAPI_CHILDREN.
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+[UID:1507][2798048] Reached max children process limit: 6, extra: 2, current: 8, busy: 5, please increase LSAPI_CHILDREN.
+[UID:1507][2798048] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1507][2798048] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1507][2798048] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1507][2798048] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+Forbidden (Referer checking failed - Referer is malformed.): /wp-plain.php
+Forbidden (Referer checking failed - Referer is malformed.): /alfacgiapi/perl.alfa
+Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Forbidden (Referer checking failed - Referer is malformed.): /wp-plain.php
+Forbidden (Referer checking failed - Referer is malformed.): /alfacgiapi/perl.alfa
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:102: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:90: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:90: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Forbidden (Referer checking failed - Referer is malformed.): /wp-plain.php
+Forbidden (Referer checking failed - Referer is malformed.): /alfacgiapi/perl.alfa
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+Forbidden (Referer checking failed - Referer is malformed.): /wp-plain.php
+Forbidden (Referer checking failed - Referer is malformed.): /alfacgiapi/perl.alfa
+Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+Forbidden (Referer checking failed - Referer is malformed.): /wp-plain.php
+Forbidden (Referer checking failed - Referer is malformed.): /alfacgiapi/perl.alfa
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:90: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:102: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:90: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:90: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:90: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:90: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+Forbidden (Referer checking failed - no Referer.): /
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:30: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:102: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:90: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:102: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:30: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:90: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:90: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:30: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+Forbidden (Referer checking failed - no Referer.): /
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:168: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:167: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:167: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:167: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:167: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+/home/buyjclsn/ecom/buyjoi/views.py:167: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+/home/buyjclsn/ecom/buyjoi/views.py:30: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:90: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:167: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:167: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:167: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:167: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:167: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+/home/buyjclsn/ecom/buyjoi/views.py:30: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/buyjclsn/virtualenv/ecom/3.9/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'mail.buyjoi.com'. You may need to add 'mail.buyjoi.com' to ALLOWED_HOSTS.
+/home/buyjclsn/ecom/buyjoi/views.py:167: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'buyjoi.models.Product'> QuerySet.
+  paginator = Paginator(products, 20)
+[UID:1507][638003] Reached max children process limit: 6, extra: 2, current: 8, busy: 6, please increase LSAPI_CHILDREN.

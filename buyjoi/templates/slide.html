@@ -1,0 +1,38 @@
+{% load static %}
+
+<!-- Swiper -->
+<div class="swiper mySwiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <img src=" {% static '/img/BannerA.webp' %}" width="100%" />
+    </div>
+    <div class="swiper-slide">
+      <img src=" {% static '/img/BannerB.webp' %}" width="100%" />
+    </div>
+    <div class="swiper-slide">
+      <img src=" {% static '/img/BannerD.webp' %}" width="100%" />
+    </div>
+   
+  </div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+</div>
+
+<!-- Swiper JS -->
+<script src=" {% static '/js/swiper-bundle.min.js' %} "></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+      delay: 5500,
+      disableOnInteraction: false,
+    },
+      navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>

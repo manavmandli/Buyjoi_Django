@@ -1,0 +1,155 @@
+{% extends 'main.html' %} {% load tailwind_tags %} {% load static %}
+{% block title %} Search Results | {% endblock title %} {% block content %}
+
+
+{% include 'navbar.html' %}
+
+<br />
+
+<div class="ml-4 flex justify-around">
+  {% if searchdata %}
+
+    <div class="hidden md:block border-l-4 border-gray-400 mt-4 opacity-30">
+    </div>
+    {% endif %}
+
+    
+    <div class="pl-4">
+        <h1 class="text-2xl font-semibold py-4">
+          {% if searchdata %} 
+          Search results:
+          {% else %}
+          No Data found 
+          {% endif %}
+        </h1>
+
+        <div class="justify-around sm:grid sm:grid-cols-2 gap-4 md:grid-cols-3  lg:grid-cols-4">
+            {% for item in searchdata %}
+            <div class=" box-border w-60 p-4   shadow-md hover:scale-110 h-auto ">
+
+                    <div>   
+                    <a href="{% url 'productview' item.category.slug item.slug %} "> <image class="prodimg"  src=" {{ item.product_image1.url }}  ">
+                        <div>
+                            <h1 class="line-clamp-2 text-clip">
+                                {{ item.name }}
+                            </h1>
+                        </div>
+                   </a>
+                </div>
+                <div>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star-half-full checked"></span>
+                  <span><a href="{% url 'productview' item.category.slug item.slug %} " class="text-sm text-gray-500">{{ item.rating_number }} rating</a></span>
+                </div>
+
+                <div>
+                    <span class="font-semibold">&#8377;{{ item.selling_price | stringformat:'d' }} </span> <span class="text-xs font-semibold"> &nbsp; MRP: <s>{{ item.original_price | stringformat:'d' }} </s></span>
+                                      </div>
+                <div>
+                    <p class="text-sm  line-clamp-3">{{ item.small_description }}
+                    </p>
+                </div>
+
+                <br/>
+                
+                <div>
+                    <a href=" {% url 'productview' item.category.slug item.slug %} "
+                    class="shadow hover:border-[#242f6f] border-[#242f6f] border-2 rounded-full focus:outline-none focus:border-[#242f6f] mt-4 px-7 py-2 text-white bg-[#242f6f] hover:bg-white hover:text-black"
+                    >View More
+                    </a>
+                    </div> 
+          </div>
+          {% endfor %}
+
+        </div>
+    </div>
+</div>
+
+
+            {% comment %} Pagination code {% endcomment %}
+
+{% comment %} 
+{% if searchdata %}
+
+
+            <br>
+            
+<div class="mt-16 mb-4 text-center">
+
+<nav aria-label="Page navigation example ">
+    <ul class="inline-flex -space-x-px">
+      {{searchdata}} &nbsp;
+      {% if searchdata.has_previous %}
+      <li>
+        <a href="/search?{{query}}&page={{searchdata.previous_page_number}}" class="py-2 px-3 ml-0 leading-tight text-gray-500 bg-white rounded-l-lg border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">Previous</a>
+      </li>
+      {% endif %}
+
+
+
+      {% for n in totalpagelist %}
+      <li>
+        <a href="/search?{{query}}&page={{n}}" id="pgnum" class="py-2 px-3 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
+          {{n}}
+        </a>
+      </li>
+      
+      {% endfor %}
+
+
+      {% if searchdata.has_next %}
+      <li>
+        <a href="/search?{{query}}&page={{searchdata.next_page_number}}" class="py-2 px-3 leading-tight text-gray-500 bg-white rounded-r-lg border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">Next</a>
+      </li>
+      {% endif %}
+    </ul>
+  </nav>
+
+  </div>
+
+    {% endif %} {% endcomment %}
+
+
+
+
+    {% comment %} pagination code ends {% endcomment %}
+
+
+
+
+
+
+
+
+
+
+        </div>
+        
+
+        
+
+
+
+
+
+
+
+    </div>
+
+
+
+</div>
+
+
+
+
+
+
+<br />
+<hr />
+<br />
+{% include 'homesupport.html' %} {% include 'footer.html' %} 
+{% endblock content %}

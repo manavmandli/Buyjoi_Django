@@ -1,0 +1,214 @@
+{% load static %}
+
+
+
+
+
+<section class="px-3 py-5 lg:py-10">
+    <div class="grid lg:grid-cols-2 items-center justify-items-center gap-5">
+      <div class="order-2 lg:order-1 flex flex-col justify-center items-center">
+        <p class="text-4xl font-bold md:text-7xl text-orange-600">upto 50% OFF</p>
+        <p class="text-2xl font-bold mt-2 md:text-5xl">SUPER FESTIVAL SALE</p>
+        <p class="mt-2 text-sm md:text-lg">For limited time only!</p>
+        <a class="text-xl bg-black rounded-xl text-white py-2 px-5 mt-10 hover:bg-zinc-800">explore more</a>
+      </div>
+      <div class="order-1 lg:order-2">
+        <img class="h-80 w-80 object-cover rounded-xl lg:w-[500px] lg:h-[500px]" src=" {% static '/img/festivalsaree.webp' %} " alt="">
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+<br><br>
+<section>
+    
+    <h1 class="text-5xl text-center font-bold my-6 " style="font-family: 'Jost', sans-serif; ">
+        SUPER TRADITIONAL SAREE
+    </h1>
+
+    <div class="sm:flex justify-center items-center mx-[2%]  py-2 gap-2 sm:mt-20" >
+
+      <div>
+        <img class="hidden sm:block mx-auto rounded-xl shadow-xl duration-500 hover:scale-105 my-4" src="{% static '/img/buyjoisaree2.webp' %}">
+      </div>
+
+      <div>
+        <img class=" block mx-auto rounded-xl shadow-xl duration-500 hover:scale-105 my-4"  src="{% static '/img/buyjoisaree3.webp' %}">
+      </div>
+      
+      <div>
+        <img  class=" hidden sm:block mx-auto rounded-xl shadow-xl duration-500 hover:scale-105 my-4" src="{% static '/img/buyjoisaree4.webp' %}">
+      </div>
+      
+      <div>
+        <img class=" hidden sm:block mx-auto rounded-xl shadow-xl duration-500 hover:scale-105 my-4"  src="{% static '/img/buyjoisaree6.webp' %}">
+      </div>
+      
+      <div>
+        <img class=" block mx-auto rounded-xl shadow-xl duration-500 hover:scale-105 my-4"  src="{% static '/img/buyjoisaree7.webp' %}">
+      </div>
+      
+      <div>
+        <img class=" block mx-auto rounded-xl shadow-xl duration-500 hover:scale-105 my-4"  src="{% static '/img/buyjoisaree8.webp' %}">
+      </div>
+   
+    </div>
+
+
+
+
+</section>
+<br><br>
+
+
+  <!-- ✅ Grid Section - Starts Here 👇 -->
+  <section class="w-fit mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 md:grid-cols-3 justify-items-center justify-center gap-y-20 gap-x-14 mt-10 mb-5">
+  
+
+    {% for item in homesaree %}
+
+
+    <!--   ✅ Product card 1 - Starts Here 👇 -->
+    <div class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+      <a href="{% url 'productview' item.category.slug item.slug %}">
+        <img class="prodimg" src="{{ item.product_image1.url }}" alt="Product" class=" object-cover rounded-t-xl" />
+        <div class="px-4 py-3 w-72">
+          <span class="text-gray-400 mr-3 uppercase text-xs">Ambition Sarees</span>
+          <p class="text-lg font-bold text-black truncate block capitalize">{{ item.name }}</p>
+          <div class="flex items-center">
+           <p class="text-lg font-semibold text-black cursor-auto my-3"> <span class="text-sm">Offer Price:</span> &#8377;{{ item.selling_price | stringformat:'d' }}</p>
+            <del>
+              <p class="text-sm text-gray-600 cursor-auto "> <span class="text-sm">Original Price:</span> &#8377;{{ item.original_price | stringformat:'d' }} </p>
+            </del>
+            <div class="ml-auto"> <a href="{% url 'productview' item.category.slug item.slug %}"
+                class="bg-pink-500 text-white active:bg-pink-600 font-bold uppercase text-xs px-4 py-2 rounded-full shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button"
+                > View
+                    </a>  </div>
+          </div>
+        </div>
+      </a>
+    </div>
+    <!--   🛑 Product card 1 - Ends Here  -->
+  
+    {% endfor %}
+
+
+  </section>
+  
+  <!-- 🛑 Grid Section - Ends Here -->
+
+
+  <br><br>
+  <img src="{% static '/img/sareebanner.jpg' %}" class="m-0 w-full" />
+
+<br><br>
+<section>
+  <br><br>
+    <h1 class="text-5xl text-center font-bold my-6 " style="font-family: 'Jost', sans-serif; ">
+        SUPER STYLISH KURTI
+    </h1>
+    <br><br>    <br><br>
+    <img src="  {% static '/img/kurtibanner.jpg' %} " class="m-0 w-full" />
+
+    <br><br>
+</section>
+
+
+
+  <!-- ✅ Grid Section - Starts Here 👇 -->
+  <section class="w-fit mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 md:grid-cols-3 justify-items-center justify-center gap-y-20 gap-x-14 mt-10 mb-5">
+  
+
+    {% for item in homekurti %}
+
+
+    <!--   ✅ Product card 1 - Starts Here 👇 -->
+    <div class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+      <a href="{% url 'productview' item.category.slug item.slug %}">
+        <img class="prodimg" src="{{ item.product_image1.url }}" alt="Product" class=" object-cover rounded-t-xl" />
+        <div class="px-4 py-3 w-72">
+          <span class="text-gray-400 mr-3 uppercase text-xs">Ambition Sarees</span>
+          <p class="text-lg font-bold text-black truncate block capitalize">{{ item.name }}</p>
+          <div class="flex items-center">
+           <p class="text-lg font-semibold text-black cursor-auto my-3"> <span class="text-sm">Offer Price:</span> &#8377;{{ item.selling_price | stringformat:'d' }}</p>
+            <del>
+              <p class="text-sm text-gray-600 cursor-auto "> <span class="text-sm">Original Price:</span> &#8377;{{ item.original_price | stringformat:'d' }} </p>
+            </del>
+            <div class="ml-auto"> <a href="{% url 'productview' item.category.slug item.slug %}"
+                class="bg-pink-500 text-white active:bg-pink-600 font-bold uppercase text-xs px-4 py-2 rounded-full shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button"
+                > View
+                    </a>  </div>
+          </div>
+        </div>
+      </a>
+    </div>
+    <!--   🛑 Product card 1 - Ends Here  -->
+  
+    {% endfor %}
+
+
+  </section>
+  
+  <!-- 🛑 Grid Section - Ends Here -->
+
+
+
+
+<br><br>
+<section>
+    <img src="  {% static '/img/lehengabanner.jpg' %} " class="m-0 w-full" />
+    <br><br>
+    <h1 class="text-5xl text-center font-bold my-6 " style="font-family: 'Jost', sans-serif; ">
+        SUPER FESTIVE LEHENGA
+    </h1>
+    <br><br>
+</section>
+
+
+
+
+  <!-- ✅ Grid Section - Starts Here 👇 -->
+  <section class="w-fit mx-auto grid grid-cols-1  sm:grid-cols-2 lg:grid-cols-4 md:grid-cols-3 justify-items-center justify-center gap-y-20 gap-x-14 mt-10 mb-5">
+  
+
+    {% for item in homelehenga %}
+
+
+    <!--   ✅ Product card 1 - Starts Here 👇 -->
+    <div class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+      <a href="{% url 'productview' item.category.slug item.slug %}">
+        <img class="prodimg" src="{{ item.product_image1.url }}" alt="Product" class=" object-cover rounded-t-xl" />
+        <div class="px-4 py-3 w-72">
+          <span class="text-gray-400 mr-3 uppercase text-xs">Ambition Sarees</span>
+          <p class="text-lg font-bold text-black truncate block capitalize">{{ item.name }}</p>
+          <div class="flex items-center">
+           <p class="text-lg font-semibold text-black cursor-auto my-3"> <span class="text-sm">Offer Price:</span> &#8377;{{ item.selling_price | stringformat:'d' }}</p>
+            <del>
+              <p class="text-sm text-gray-600 cursor-auto "> <span class="text-sm">Original Price:</span> &#8377;{{ item.original_price | stringformat:'d' }} </p>
+            </del>
+            <div class="ml-auto"> <a href="{% url 'productview' item.category.slug item.slug %}"
+                class="bg-pink-500 text-white active:bg-pink-600 font-bold uppercase text-xs px-4 py-2 rounded-full shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button"
+                > View
+                    </a>  </div>
+          </div>
+        </div>
+      </a>
+    </div>
+    <!--   🛑 Product card 1 - Ends Here  -->
+  
+    {% endfor %}
+
+
+  </section>
+  
+  <!-- 🛑 Grid Section - Ends Here -->
+
+
+  <br><br>
+      <img src="  {% static '/img/BannerC.webp' %} " class="m-0 w-full" />
+
