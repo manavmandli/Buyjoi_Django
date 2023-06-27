@@ -67,25 +67,68 @@ $(document).ready(function () {
   });
 
 
-  $('.changeQuantity').click(function (e) {
-    e.preventDefault();
+  // $('.changeQuantity').click(function (e) {
+  //   e.preventDefault();
 
-    var product_id = $(this).closest('.product_data').find('.prod_id').val();
-    var product_qty = $(this).closest('.product_data').find('.qty_input').val();
+  //   var product_id = $(this).closest('.product_data').find('.prod_id').val();
+  //   var product_qty = $(this).closest('.product_data').find('.qty_input').val();
+  //   var token = $('input[name=csrfmiddlewaretoken]').val();
+  //   $.ajax({
+  //     method: "POST",
+  //     url: "/update-cart",
+  //     data: {
+  //       'product_id': product_id,
+  //       'product_qty': product_qty,
+  //       csrfmiddlewaretoken: token,
+  //     },
+  //     success: function (response) {
+  //     },
+  //   });
+  // });
+
+   $('.qty_input').each(function() {
+    var quantityInput = $(this);
+    var product_id = quantityInput.data('product-id');
+    var cart_quantity = '{{ cart_quantity|get_item:item.id|stringformat:"d" }}';
+    quantityInput.val(cart_quantity);
+  });
+
+  // Handle quantity change
+  $('.changeQuantity').click(function(e) {
+    e.preventDefault();
+    var action = $(this).data('action');
+    var quantityInput = $(this).parent().find('.qty_input');
+    var product_id = quantityInput.data('product-id');
+    var product_qty = parseInt(quantityInput.val());
     var token = $('input[name=csrfmiddlewaretoken]').val();
+
+    if (action === 'decrement') {
+      product_qty = Math.max(0, product_qty - 1);
+    } else if (action === 'increment') {
+      product_qty += 1;
+    }
+
+    quantityInput.val(product_qty);
+
+    // Update the quantity in the server using AJAX
     $.ajax({
       method: "POST",
       url: "/update-cart",
       data: {
         'product_id': product_id,
         'product_qty': product_qty,
-        csrfmiddlewaretoken: token,
+        'csrfmiddlewaretoken': token
       },
-      success: function (response) {
+      success: function(response) {
+        // Handle success response if needed
       },
+      error: function(xhr, textStatus, error) {
+        console.log(xhr.statusText);
+        console.log(textStatus);
+        console.log(error);
+      }
     });
   });
-
   $('.deletecartitemBtn').click(function (e) {
     e.preventDefault();
 

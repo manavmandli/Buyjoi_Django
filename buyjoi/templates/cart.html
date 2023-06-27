@@ -1,5 +1,3 @@
-
-
 {% extends 'main.html' %} {% load tailwind_tags %} {% load static %}
 {% block title %} Shopping Cart | {% endblock title %}
 {% block content %}
@@ -8,114 +6,108 @@
 {% include 'navbar.html' %}
 
 <div class="container mx-auto ">
-<h1 class="mx-2 text-2xl font-semibold mt-6">Shopping Cart</h1>
-<hr class="my-2" />
+  <h1 class="mx-2 text-2xl font-semibold mt-6">Shopping Cart</h1>
+  <hr class="my-2" />
 </div>
 
-  
+
 
 {% if cart %}
 
 <div class="container mx-auto">
   <div class="md:grid md:grid-cols-3">
 
-  {% for item in cart %}
+    {% for item in cart %}
 
-      <div class="mx-4 my-4 product_data border-2 py-4 px-4 ">
-      
-        <div class="pr-4 containerimg1 mx-4 border-gray-300 px-4">
-          <img
-            src="{{ item.product.product_image1.url }}"
-                width="auto"
-                height="auto"
-          />
-        </div>
-        <div class="">
-        <a href="{{ item.product.category }}/{{ item.product.slug }} " ><h1 class="py-2 text-lg font-semibold">
-          {{ item.product.name }}           
-        </h1></a></div>
+    <div class="mx-4 my-4 product_data border-2 py-4 px-4 ">
 
-        <div class="my-2">
+      <div class="pr-4 containerimg1 mx-4 border-gray-300 px-4">
+        <img src="{{ item.product_image1.url }}" width="auto" height="auto" />
+      </div>
+      <div class="">
+        <a href="{{ item.category }}/{{ item.slug }} ">
+          <h1 class="py-2 text-lg font-semibold">
+            {{ item.name }}
+          </h1>
+        </a>
+      </div>
+
+      <div class="my-2">
         <span class=" bg-gray-200 text-black  py-2 rounded-full px-4 border border-[#242f6f]">
-            Final Price: &nbsp; &#8377;{{ item.product.selling_price | stringformat:'d' }}
-        </span>  &nbsp; <strike>&#8377;{{ item.product.original_price | stringformat:'d' }} </strike></div>
-        <div class="mt-4">
-          <input type="hidden" value="{{ item.product_id }}" class="prod_id">
+          Final Price: &nbsp; &#8377;{{ item.selling_price | stringformat:'d' }}
+        </span> &nbsp; <strike>&#8377;{{ item.original_price | stringformat:'d' }} </strike>
+      </div>
+      <div class="mt-4">
+        <input type="hidden" value="{{ item.product_id }}" class="prod_id">
         {% csrf_token %}
-        {% if item.product.quantity >= item.product_qty %}
+      
 
         <div>
-        <p>Quantity:</p>
-          <span class="flex flex-row h-10 w-32 rounded-lg relative bg-transparent mt-1">
-            <button onClick="history.go(0);" data-action="decrement" type="button" class=" changeQuantity text-gray-600 bg-gray-300 hover:text-gray-700 hover:bg-gray-400 h-full w-20 rounded-l cursor-pointer outline-none">
-              <span class="m-auto text-2xl font-thin">−</span>
-            </button>
-            <input type="text" class=" qty_input focus:outline-none text-center w-full font-semibold text-md  md:text-basecursor-default flex items-center outline-none" name="custom-input-number" value="{{ item.product_qty }}"></input>
-          <button onClick="history.go(0);" data-action="increment" type="button" class=" changeQuantity bg-gray-300 text-gray-600 hover:text-gray-700 hover:bg-gray-400 h-full w-20 rounded-r cursor-pointer">
-            <span class="m-auto text-2xl font-thin">+</span>
-          </button>
-        </span>
- 
-      </div>
-        {% else %}
-        <div class="text-lg font-semibold">Out of stock </div>
-          
-        {% endif %}
+          <p>Quantity:</p>
+  <span class="flex flex-row h-10 w-32 rounded-lg relative bg-transparent mt-1">
+    <button data-action="decrement" type="button"
+      class="changeQuantity text-gray-600 bg-gray-300 hover:text-gray-700 hover:bg-gray-400 h-full w-20 rounded-l cursor-pointer outline-none">
+      <span class="m-auto text-2xl font-thin">−</span>
+    </button>
+    <input type="text" data-product-id="{{ item.product_id }}" class="qty_input focus:outline-none text-center w-full font-semibold text-md md:text-base cursor-default flex items-center outline-none" name="custom-input-number" value="{{ item.quantity }}"></input>
+    <button data-action="increment" type="button" class="changeQuantity bg-gray-300 text-gray-600 hover:text-gray-700 hover:bg-gray-400 h-full w-20 rounded-r cursor-pointer">
+      <span class="m-auto text-2xl font-thin">+</span>
+    </button>
+  </span>
 
-      </div>
-
-
-                  
-        <p class="py-2 text-sm">
-          {{ item.product.small_description }}
-        </p>
-
-
-        <div>
-            <button
-              type="button"
-              onClick="history.go(0);"
-              class="deletecartitemBtn text-sm bg-[#242f6f] text-white py-3 px-5 rounded-full hover:bg-gray-200 hover:text-black"
-              > <i class="fa fa-trash"></i>&nbsp;  Remove </button>
-
-              <button
-              type="button"
-              class="addToWishlist text-sm bg-[#242f6f] text-white py-3 px-5 rounded-full hover:bg-gray-200 hover:text-black"
-              > <i class="fa-solid fa-heart"></i>&nbsp; Add to Wishlist </button>
         </div>
 
       </div>
 
-  {% endfor %}
+
+
+      <p class="py-2 text-sm">
+        {{ item.small_description }}
+      </p>
+
+
+      <div>
+        <button type="button" onClick="history.go(0);"
+          class="deletecartitemBtn text-sm bg-[#242f6f] text-white py-3 px-5 rounded-full hover:bg-gray-200 hover:text-black">
+          <i class="fa fa-trash"></i>&nbsp; Remove </button>
+
+        <button type="button"
+          class="addToWishlist text-sm bg-[#242f6f] text-white py-3 px-5 rounded-full hover:bg-gray-200 hover:text-black">
+          <i class="fa-solid fa-heart"></i>&nbsp; Add to Wishlist </button>
+      </div>
+
+    </div>
+
+    {% endfor %}
 
   </div>
 </div>
 
-        <div class="mt-8 text-center mx-[20%]">
-        <a href=" {% url 'checkoutpage' %}" class=" bg-[#ff8757] text-black hover:text-white py-3 rounded-full px-8 border border-gray-500 hover:bg-[#421806] text-lg">
-            Checkout
-        </a>
-        </div>
+<div class="mt-8 text-center mx-[20%]">
+  <a href=" {% url 'checkoutpage' %}"
+    class=" bg-[#ff8757] text-black hover:text-white py-3 rounded-full px-8 border border-gray-500 hover:bg-[#421806] text-lg">
+    Checkout
+  </a>
+</div>
 
-      <hr class="my-4" />
+<hr class="my-4" />
 
-      <br><br>
+<br><br>
 {% else %}
 
 
-    <div class="text-lg font-semibold  text-center mx-[20%]">
-      Your CART is Empty. Please Add product in your cart.
+<div class="text-lg font-semibold  text-center mx-[20%]">
+  Your CART is Empty. Please Add product in your cart.
 
-    </div>
+</div>
 
 
 {% endif %}
 
 <div class="mt-4  text-center mx-[20%]">
-  <a
-    href=" {% url 'index' %} "
-    class="text-xs bg-[#242f6f] text-white py-2 rounded-full px-4 hover:bg-gray-200 hover:text-black"
-    >Shopping Continue..</a>
+  <a href=" {% url 'index' %} "
+    class="text-xs bg-[#242f6f] text-white py-2 rounded-full px-4 hover:bg-gray-200 hover:text-black">Shopping
+    Continue..</a>
 </div>
 
 
@@ -123,9 +115,7 @@
 <hr>
 <br />
 
-{% include 'homesupport.html' %} {% include 'footer.html' %} 
+{% include 'homesupport.html' %} {% include 'footer.html' %}
 
 
 {% endblock content %}
-
-
