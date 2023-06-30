@@ -1,0 +1,99 @@
+{% extends 'main.html' %} {% load tailwind_tags %} {% load static %}
+{% block title %} Kurti | {% endblock title %} {% block content %}
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KBZS69M"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+{% include 'navbar.html' %}
+<img src="{% static '/img/Banner 6.jpg' %}" class="m-0 w-full" />
+
+
+<br />
+
+
+<h1 class="text-center py-4">
+  Category: Stylish Designer Kurti
+</h1>
+
+
+
+
+<section class="w-fit mx-auto grid grid-cols-1  sm:grid-cols-2 lg:grid-cols-4 md:grid-cols-3 justify-items-center justify-center gap-y-20 gap-x-14 mt-10 mb-5">
+  
+
+  {% for item in productsdata %}
+    
+    
+        <!--   ✅ Product card 1 - Starts Here 👇 -->
+        <div class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+          <a href="{% url 'productview' item.category.slug item.slug %}">
+            <img class="prodimg" src="{{ item.product_image1.url }}" alt="Product" class=" object-cover rounded-t-xl" />
+            <div class="px-4 py-3 w-72">
+              <span class="text-gray-400 mr-3 uppercase text-xs">Ambition Sarees</span>
+              <p class="text-lg font-bold text-black truncate block capitalize">{{ item.name }}</p>
+              <div class="flex items-center">
+               <p class="text-lg font-semibold text-black cursor-auto my-3"> <span class="text-sm">Offer Price:</span> &#8377;{{ item.selling_price | stringformat:'d' }}</p>
+                <del>
+                  <p class="text-sm text-gray-600 cursor-auto "> <span class="text-sm">Original Price:</span> &#8377;{{ item.original_price | stringformat:'d' }} </p>
+                </del>
+                <div class="ml-auto"> <a href="{% url 'productview' item.category.slug item.slug %}"
+                    class="bg-pink-500 text-white active:bg-pink-600 font-bold uppercase text-xs px-4 py-2 rounded-full shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button"
+                    > View
+                        </a>  </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!--   🛑 Product card 1 - Ends Here  -->
+      
+        {% endfor %}
+    
+    
+      </section>
+
+
+
+
+            {% comment %} Pagination code {% endcomment %}
+
+            <br>
+
+            <div class="mt-16 mb-4 text-center">
+
+              <nav aria-label="Page navigation example ">
+                  <ul class="inline-flex -space-x-px">
+                          {% if productsdata.has_previous %}
+                    <li>
+                      <a href="/kurti?page={{productsdata.previous_page_number}}" class="py-2 px-3 ml-0 leading-tight text-gray-100 bg-gray-500 rounded-l-lg border border-gray-300 ">Previous</a>
+                    </li>
+                    {% endif %}
+              
+              
+              
+                    <li>
+                      <a id="pgnum" class="py-2 px-3 leading-tight text-gray-400 bg-gray-200 border border-gray-300 cursor-default ">
+                        {{productsdata}}
+                      </a>
+                      </li>
+                    
+              
+              
+                    {% if productsdata.has_next %}
+                    <li>
+                      <a href="/kurti?page={{productsdata.next_page_number}}" class="py-2 px-3 leading-tight text-gray-100 bg-gray-500 rounded-r-lg border border-gray-300 hover:bg-gray-100 hover:text-gray-700">Next</a>
+                    </li>
+                    {% endif %}
+                  </ul>
+                </nav>
+              
+                </div>
+            
+
+
+<br />
+<hr />
+<br />
+{% include 'homesupport.html' %} {% include 'footer.html' %}
+{% endblock content %}

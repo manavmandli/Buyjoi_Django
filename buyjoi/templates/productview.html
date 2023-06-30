@@ -1,0 +1,182 @@
+{% extends 'main.html' %} {% load tailwind_tags %} {% load static %}
+{% block title %} Account | {% endblock title %} {% block content %}
+
+{% include 'navbar.html' %}
+
+<section>
+
+  <div class="lg:flex px-[10%] mt-4 product_data xzoom-container">
+   
+    <div class="grid grid-rows-1 lg:w-1/2">
+   
+      <div class="bigimgcontainer md:px-2 pb-2" >
+        <img
+          src=" {{ products.product_image1.url }} "
+          class="bigimage xzoom"
+        />
+        
+      </div>
+
+
+      <div class="gap-2 flex xzoom-thumbs bottom-0">
+        <div class=" containerimg border-4 border-solid shadow-lg" >
+            <a href="{{ products.product_image1.url }}">
+              <img
+                src="{{ products.product_image1.url }} "
+                class="prodviewimg xzoom-gallery" 
+              /><br>
+          </a>
+        </div>
+    
+        <div class="containerimg border-4 border-solid shadow-lg">
+          {% if products.product_image2 %}
+
+          <a href="{{ products.product_image2.url }}">
+            <img
+              src=" {{ products.product_image2.url }} "
+              class="prodviewimg xzoom-gallery" 
+            /><br>
+        </a>
+        {% endif %}
+
+        </div>
+    
+        <div class=" containerimg border-4 border-solid shadow-lg">
+          {% if products.product_image3 %}
+
+          <a href="{{ products.product_image3.url }}">
+            <img
+              src="  {{ products.product_image3.url }} "
+              class="prodviewimg xzoom-gallery" 
+            /><br>
+        </a>
+        {% endif %}
+
+        </div>
+    
+    
+      </div> 
+  
+         
+  </div>
+
+
+
+
+
+
+  
+
+   <div class="md:w-2/4 pl-2">
+        <h1 class="text-left">
+        Product Name:<br></h1> <h1 class="font-semibold text-xl">
+        {{ products.name }}
+        </h1>
+        <br>
+        <span class="bg-[#242f6f] py-2 px-4 text-white rounded-full"> 4.4 <i class="fa fa-star checked"></i></span>
+        <br><br>
+        <span class="text-left font-semibold text-xl">
+            Price:
+            &#8377 {{ products.selling_price | stringformat:'d' }}
+        </span> <span>&nbsp;&nbsp; <s> Original Price: &#8377 {{ products.original_price | stringformat:'d' }} </s></span> 
+        <br><br>
+        <span class="text-left font-semibold text-lg">
+            Quantity Available:
+            {{ products.quantity }}
+        </span>
+        <br><br>
+        {% csrf_token %}
+        <p class="text-left font-semibold text-lg">
+            Select your quantity
+        </p>
+        <input type="hidden" value="{{ products.id }}" class="prod_id">
+        {% comment %} Quantity minus plus code start {% endcomment %}
+        <span class="flex flex-row h-10 w-32 rounded-lg relative bg-transparent mt-1">
+          <button data-action="decrement" class=" text-gray-600 bg-gray-300 hover:text-gray-700 hover:bg-gray-400 h-full w-20 rounded-l cursor-pointer outline-none">
+            <span class="m-auto text-2xl font-thin">−</span>
+          </button>
+          <input type="text" class=" qty_input focus:outline-none text-center w-full font-semibold text-md  md:text-basecursor-default flex items-center outline-none" name="custom-input-number" value="1"></input>
+        <button data-action="increment" class="bg-gray-300 text-gray-600 hover:text-gray-700 hover:bg-gray-400 h-full w-20 rounded-r cursor-pointer">
+          <span class="m-auto text-2xl font-thin">+</span>
+        </button>
+      </span>
+
+
+        {% comment %} Quantity minus plus code end {% endcomment %}
+        
+        <br>
+        <h2 class="text-left font-semibold mt-3">
+            Short Description
+        </h2>
+        <p>
+        {{ products.small_description }}
+        </p>
+
+        <br>
+        <br>
+       {% if products.quantity > 0 %}
+        <button type="button"
+        class="addToCartBtn shadow hover:border-[#242f6f] border-[#242f6f] mx-3 border-2 rounded-full focus:outline-none focus:border-[#242f6f] mt-4 px-7 py-2 text-white bg-[#242f6f] hover:bg-white hover:text-black"
+        ><i class="fa-solid fa-cart-shopping"></i>&nbsp; Add to Cart
+      </button>
+      <button type="button"
+        class="shadow addToWishlist hover:border-[#242f6f] border-[#242f6f] mx-3 border-2 rounded-full focus:outline-none focus:border-[#242f6f] mt-4 px-7 py-2 text-white bg-[#242f6f] hover:bg-white hover:text-black"
+        ><i class="fa-solid fa-heart"></i>&nbsp; Add to Wishlist 
+      </button>
+        {% else %}
+
+        <button
+        class="shadow hover:border-[#242f6f] border-[#242f6f] mx-3 border-2 rounded-full focus:outline-none focus:border-[#242f6f] mt-4 px-7 py-2 text-white bg-[#242f6f] hover:bg-white hover:text-black"
+        ><i class="fa-solid fa-layer-group"></i>&nbsp; Out of Stock
+    </button>
+    <button type="button"
+    class="shadow addToWishlist hover:border-[#242f6f] border-[#242f6f] mx-3 border-2 rounded-full focus:outline-none focus:border-[#242f6f] mt-4 px-7 py-2 text-white bg-[#242f6f] hover:bg-white hover:text-black"
+    ><i class="fa-solid fa-heart"></i>&nbsp; Add to Wishlist 
+  </button>
+        {% endif %}
+    </div>
+
+
+
+  </div>
+
+
+
+</section>
+
+  <div>
+  <br>
+  <hr class="w-4/5 mx-auto ">
+  <br>
+  <div >
+  <h1 class="text-left mx-[10%] font-semibold text-xl ">
+    Full Description:<br></h1>
+    <p class="text-left  mx-[10%]"> {{ products.description }}
+    </p>
+  </div><br>  <br>
+    <hr>
+    
+
+</div>
+
+{% include 'homesupport.html' %} {% include 'footer.html' %}
+
+{% comment %} style and Javascript code for increment and decrement button
+{% endcomment %}
+
+
+<script>
+  
+
+  
+
+
+  </script>
+
+
+
+
+
+
+
+{% endblock content %}

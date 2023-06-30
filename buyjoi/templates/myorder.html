@@ -1,0 +1,131 @@
+{% extends 'main.html' %} {% load tailwind_tags %} {% load static %}
+{% block title %} My Order List | {% endblock title %} {% block content %}
+
+
+{% include 'navbar.html' %}
+
+<br />
+{% if orders %}
+
+<div class="text-center">
+  <div class="mt-2 mx-4">
+  <img src=" {% static '/img/myorder.jpg' %} " class="block mx-auto" /><br>
+  <p class="text-xl font-semibold"> List of My Orders  </p>
+<br></div>
+</div>
+
+
+<div class="hidden  sm:flex flex-col justify-center items-center">
+
+  <table class="mt-4 whitespace-nowrap w-[80%]">
+      <thead aria-label="table heading" class="h-16 text-center py-6 bg-gray-50 border-gray-200 dark:bg-gray-800 border-b">
+          <tr>
+              <th class="text-base font-medium leading-4 text-gray-600 dark:text-white text-center">ORDER DATE</th>
+              <th class="text-base font-medium leading-4 text-gray-600 dark:text-white text-center">TRACKING NUMBER</th>
+              <th class="text-base font-medium leading-4 text-gray-600 dark:text-white text-center">TOTAL PRICE</th>
+              <th class="text-base font-medium leading-4 text-gray-600 dark:text-white text-center">STATUS</th>
+              <th class="text-base font-medium leading-4 text-gray-600 dark:text-white text-center">ACTION</th>
+
+          </tr>
+      </thead>
+      {% for item in orders %}
+      <tbody class="text-center">
+
+          <tr class="border-gray-200 border-b ">
+
+            <th class="py-4 text-center">
+              {{ item.created_at }}
+            </th>
+            <th class="py-4 text-center">
+            
+              {{ item.tracking_no }}
+            </th>
+            <th class="py-4">
+              &#8377; {{ item.total_price | stringformat:'d'}}
+            </th>
+            <th class="py-4 text-center">
+              {{ item.status }}
+            </th>
+
+            <th class="py-4 text-center">
+              <a href="{% url 'vieworder' item.tracking_no %}" class="shadow hover:border-[#242f6f] border-[#242f6f] border-2 rounded-full focus:outline-none focus:border-[#242f6f] px-8 py-2 text-white bg-[#242f6f] hover:bg-white hover:text-black">View</a>
+
+            </th>
+
+          </tr>
+
+      </tbody>
+
+      {% endfor %}
+  </table>
+</div>
+<!-- Desktop Responsive End -->
+
+
+
+
+<!-- Mobile Responsive Start -->
+<div class="text-center m-auto block">
+  <div class="sm:hidden flex flex-col text-center container ">
+      {% for item in orders %}
+      <div class="border-gray-200 border-b pb-10 border-solid border-gray-500 border-2">
+        <br/>
+          <div>
+            <h1 class="font-semibold">ORDER DATE
+            </h1>
+            <p>
+              {{ item.created_at }}
+            </p>
+          </div>
+          <br/>
+          <div>
+            <h1 class="font-semibold">TRACKING NUMBER
+            </h1>
+            <p>
+              {{ item.tracking_no }}
+            </p>
+          </div>
+          <br/>
+          <div>
+            <h1 class="font-semibold">TOTAL PRICE
+            </h1>
+            <p>
+              {{ item.total_price | stringformat:'d'}}
+            </p>
+          </div>
+          <br/>
+          <div>
+            <h1 class="font-semibold">STATUS
+            </h1>
+            <p>
+              {{ item.status }}
+            </p>
+          </div>
+          <br/>          <br/>
+          <div>
+            <a href="{% url 'vieworder' item.tracking_no %}" class="shadow hover:border-[#242f6f] border-[#242f6f] border-2 rounded-full focus:outline-none focus:border-[#242f6f] px-8 py-2 text-white bg-[#242f6f] hover:bg-white hover:text-black">View</a>
+
+          </div>
+
+
+      </div>
+      {% endfor %}
+  </div>
+</div>
+<!-- Mobile Responsive End -->
+{% else %}
+
+<div class="text-center m-auto block">
+  <h1 class="text-xl font-semibold leading-9 text-gray-800">
+    You don't have any pending orders. Browse and checkout latest offers!
+  </h1>
+</div>
+
+
+{% endif %}
+
+<br />
+<hr />
+<br />
+{% include 'homesupport.html' %} {% include 'footer.html' %}
+{% endblock content %}

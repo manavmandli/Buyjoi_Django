@@ -1,0 +1,123 @@
+{% extends 'main.html' %} {% load tailwind_tags %} {% load static %} 
+{% block title %} Shopping Cart | {% endblock title %}
+{% block content %}
+
+
+{% include 'navbar.html' %}
+
+
+<br><br>
+{% if wishlistitem %}
+<div class="overflow-hidden">
+<div class="block m-auto">
+    <h1 class="sm:text-2xl text-lg text-center font-semibold  text-gray-800">Your Favourites</h1>
+
+</div>
+
+    
+    <div class="hidden sm:flex flex-col justify-start items-start container mx-[10%] ">
+
+        <table class="w-4/5  mt-16 whitespace-nowrap">
+            <thead aria-label="table heading" class="w-4/5 h-16 text-left py-6  border-gray-200 bg-gray-800 border-b">
+                <tr>
+                    <th class="text-base font-medium leading-4 text-white text-left pl-6">YOUR PRODUCT</th>
+                    <th class="text-base font-medium leading-4 text-white text-left pl-6">PRODUCT NAME</th>
+                    <th class="text-base font-medium leading-4 text-white text-left pl-6">PRICE</th>
+                    <th class="text-base font-medium leading-4 text-white text-center pl-6">MORE OPTIONS</th>
+                    <th class="text-base font-medium leading-4 text-white text-center"></th>
+                </tr>
+            </thead>
+            {% for item in wishlistitem %}
+            <tbody class="w-4/5 text-left product_data">
+                <input type="hidden" value="{{ item.product_id }}" class="prod_id">
+                {% csrf_token %}
+                <tr class="border-gray-200 border-b">
+
+                    <th><img class="pl-6 py-4 w-36 h-auto" src=" {{ item.product.product_image1.url }} " alt=" {{ item.product.name }} " /></th>
+                    
+                    <th class="mt-10 text-base font-medium leading-4 text-gray-600 text-left pl-6">
+                        
+                        <p class=" text-base leading-4 text-gray-800 "> {{ item.product.name }}  </p>
+
+                    </th>
+                    <th class="text-left pl-6">
+                        <p class="text-gray-800">&#8377;{{ item.product.selling_price | stringformat:'d' }}</p>
+                    </th>
+                    
+                    <th class="text-base font-medium leading-4 text-gray-600 text-center">
+                        <a href=" {% url 'productview' item.product.category.slug item.product.slug %} " class="shadow hover:border-[#242f6f] border-[#242f6f] border-2 rounded-full focus:outline-none focus:border-[#242f6f] px-4 py-2 text-white bg-[#242f6f] hover:bg-white hover:text-black">View more</a>
+
+                    </th>
+
+
+                    <th class=" text-center">
+                    <button onClick="history.go(0);" type="button" class="deletewishlistbtn shadow hover:border-[#242f6f] border-[#242f6f] border-2 rounded-full focus:outline-none focus:border-[#242f6f] px-4 py-2 text-white bg-[#242f6f] hover:bg-white hover:text-black">Remove</button>
+
+                       
+                    </th>
+                </tr>
+
+            </tbody>
+
+            {% endfor %}
+        </table>
+    </div>
+    <!-- Desktop Responsive End -->
+
+
+
+
+    <!-- Mobile Responsive Start -->
+<div class="block m-auto">
+        <div class="sm:hidden flex flex-col justify-start items-start  container mx-[10%] ">
+            {% for item in wishlistitem %}
+            <div class="border-gray-200 border-b pb-10 product_data">
+                <input type="hidden" value="{{ item.product_id }}" class="prod_id">
+                {% csrf_token %}
+
+                <div>
+                    <img class="w-72 h-auto" src=" {{ item.product.product_image1.url }} " alt=" {{ item.product.name }} " />
+                </div>
+
+                <br>
+
+                <div class="text-gray-800 w-72"> {{ item.product.name }}
+                </div>
+                <br>
+                <div>
+                <span class="shadow font-semibold border-[#242f6f] border-2 rounded-full focus:outline-none focus:border-[#242f6f] px-4 py-2">Price: &#8377;{{ item.product.selling_price | stringformat:'d' }}
+                </span>
+            </div>
+                <br>
+
+                <div>
+                    <a href=" {% url 'productview' item.product.category.slug item.product.slug %} " class="shadow hover:border-[#242f6f] border-[#242f6f] border-2 rounded-full focus:outline-none focus:border-[#242f6f] px-4 py-2 text-white bg-[#242f6f] hover:bg-white hover:text-black">View more</a>
+
+
+
+                    <button onClick="history.go(0);" type="button" class="deletewishlistbtn shadow hover:border-[#242f6f] border-[#242f6f] border-2 rounded-full focus:outline-none focus:border-[#242f6f] px-4 py-2 text-white bg-[#242f6f] hover:bg-white hover:text-black">Remove</button>
+                </div>
+
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    <!-- Mobile Responsive End -->
+</div>
+
+{% else %}
+
+<div>
+<h1 class="text-xl text-center w-[80%] mx-auto font-semibold leading-9 text-gray-800">Oh! You haven't any product in wishlist, Checkout your favourite items.</h1>
+</div>
+
+
+{% endif %}
+
+
+
+
+{% include 'homesupport.html' %} {% include 'footer.html' %} 
+
+
+{% endblock content %}
