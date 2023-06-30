@@ -1,6 +1,0 @@
-Django
-django-jazzmin
-django-staticfiles
-django-tailwind
-whitenoise
-pillow==8.0.0
