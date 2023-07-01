@@ -1,0 +1,174 @@
+{% extends 'main.html' %}
+{% load tailwind_tags %}
+{% load static %}
+
+{% block title %}Register / Signup{% endblock title %}
+
+{% block content %}
+  {% include 'navbar.html' %}
+
+  <div class="justify-center flex">
+    <div class="flex flex-col mt-2 ml-4 sm:mr-4 bg-white shadow-md px-4 sm:px-6 md:px-8 lg:px-10 py-8 rounded-3xl w-50 max-w-md">
+      <div class="text-center m-auto block font-semibold self-center text-xl sm:text-3xl text-gray-800">
+        <img src="{% static '/img/login.jpg' %}" />
+        Login here
+      </div>
+      <div class="mt-4 self-center text-xl sm:text-sm text-gray-800">
+        Enter your credentials to access your account
+      </div>
+
+      <div class="mt-10">
+        <form action="" method="POST">
+          {% csrf_token %}
+
+          <div class="flex flex-col mb-5">
+            <label for="username" class="mb-1 text-sm tracking-wide text-gray-600">Username:</label>
+            <div class="relative">
+              <div class="inline-flex items-center justify-center absolute left-0 top-0 h-full w-10 text-gray-400">
+                <i class="fas fa-at text-blue-500"></i>
+              </div>
+              <input
+                id="email"
+                type="text"
+                name="username"
+                class="text-sm placeholder-gray-500 pl-10 pr-4 rounded-2xl border border-gray-400 w-full py-2 focus:outline-none focus:border-blue-400"
+                placeholder="Enter your username"
+              />
+            </div>
+          </div>
+          <div class="flex flex-col mb-6">
+            <label for="password" class="mb-1 text-xs sm:text-sm tracking-wide text-gray-600">Password:</label>
+            <div class="relative">
+              <div class="inline-flex items-center justify-center absolute left-0 top-0 h-full w-10 text-gray-400">
+                <span>
+                  <i class="fas fa-lock text-blue-500"></i>
+                </span>
+              </div>
+              <input
+                id="password"
+                type="password"
+                name="password"
+                class="text-sm placeholder-gray-500 pl-10 pr-4 rounded-2xl border border-gray-400 w-full py-2 focus:outline-none focus:border-blue-400"
+                placeholder="Enter your password"
+              />
+            </div>
+          </div>
+
+          {% if otp_sent %}
+          <div class="flex flex-col mb-6">
+            <label for="otp" class="mb-1 text-xs sm:text-sm tracking-wide text-gray-600">OTP:</label>
+            <div class="relative">
+              <div class="inline-flex items-center justify-center absolute left-0 top-0 h-full w-10 text-gray-400">
+                <span>
+                  <i class="fas fa-lock text-blue-500"></i>
+                </span>
+              </div>
+              <input
+                id="otp"
+                type="text"
+                name="otp"
+                class="text-sm placeholder-gray-500 pl-10 pr-4 rounded-2xl border border-gray-400 w-full py-2 focus:outline-none focus:border-blue-400"
+                placeholder="Enter your OTP"
+              />
+            </div>
+          </div>
+          {% endif %}
+
+          <div class="flex w-full">
+            {% if otp_sent %}
+            <button
+              type="submit"
+              class="flex mt-2 items-center justify-center focus:outline-none text-white text-sm sm:text-base bg-blue-500 hover:bg-blue-600 rounded-full py-2 w-full transition duration-150 ease-in"
+            >
+              <span class="mr-2">Sign In</span>
+              <span>
+                <svg
+                  class="h-6 w-6"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </span>
+            </button>
+            {% else %}
+            <button
+              type="button"
+              class="flex mt-2 items-center justify-center focus:outline-none text-white text-sm sm:text-base bg-blue-500 hover:bg-blue-600 rounded-full py-2 w-full transition duration-150 ease-in"
+              onclick="sendOTP()"
+            >
+              <span class="mr-2">Send OTP</span>
+              <span>
+                <svg
+                  class="h-6 w-6"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </span>
+            </button>
+            {% endif %}
+          </div>
+        </form>
+
+        {% if otp_sent %}
+        <div id="otp-sent-message" class="mt-4 self-center text-sm text-gray-800">
+          OTP sent successfully!
+        </div>
+        {% endif %}
+
+      </div>
+
+      <br>
+      <div class="text-center m-auto block font-semibold self-center text-xl sm:text-3xl text-gray-800">
+        <img class="w-[50%] h-auto  m-auto block" src="{% static '/img/hello.gif' %}" />
+        <p class="text-sm text-center">If you're not registered, please register first..</p>
+      </div>
+
+      <div class="flex w-full">
+        <a
+          href="{% url 'register' %}"
+          class="flex mt-2 items-center justify-center focus:outline-none text-white text-sm sm:text-base bg-blue-500 hover:bg-blue-600 rounded-full py-2 w-full transition duration-150 ease-in"
+        >
+          <span class="mr-2">Register</span>
+          <span>
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  {% include 'footer.html' %}
+{% endblock content %}
+
+<script>
+  function sendOTP() {
+    // Logic to send OTP (replace this with your actual logic)
+
+    // Simulating sending OTP by adding a delay of 2 seconds
+    setTimeout(() => {
+      // Display success message
+      document.getElementById("otp-sent-message").style.display = "block";
+    }, 2000);
+  }
+</script>

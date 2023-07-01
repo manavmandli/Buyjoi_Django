@@ -7,6 +7,7 @@ from django.shortcuts import render, redirect
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from buyjoi.forms import CustomUserForm
+from django.contrib.auth.models import User
 
 @csrf_exempt
 def register(request):
@@ -23,15 +24,48 @@ def register(request):
     return render(request, "register.html" , context)
 
 
+# def loginpage(request):
+#     if request.user.is_authenticated:
+#         messages.warning(request, "You are already logged in")
+#         return redirect('/')
+#     else:
+#         if request.method == 'POST':
+#             name = request.POST.get('username')
+#             passwd = request.POST.get('password')
+#             user = authenticate(request, username=name, password=passwd)
+
+#             if user is not None:
+#                 login(request, user)
+#                 messages.success(request, "Logged in Successfully..")
+#                 return redirect("/")
+#             else:
+#                 messages.error(request, "Invalid Email or Password")
+#                 return redirect("/login")
+            
+    
+#         return render(request, "login.html")
+
+#manav code for login
 def loginpage(request):
     if request.user.is_authenticated:
         messages.warning(request, "You are already logged in")
         return redirect('/')
     else:
         if request.method == 'POST':
-            name = request.POST.get('username')
+            login_input = request.POST.get('username')  # Assuming the login input field is named 'login_input'
             passwd = request.POST.get('password')
-            user = authenticate(request, username=name, password=passwd)
+
+            # Check if the login input is an email
+            if '@' in login_input:
+                # Authenticate using email
+                try:
+                    user = User.objects.get(email=login_input)
+                    user = authenticate(request, username=user.username, password=passwd)
+                except User.DoesNotExist:
+                    user = None
+            else:
+                # Authenticate using username
+                user = authenticate(request, username=login_input, password=passwd)
 
             if user is not None:
                 login(request, user)
@@ -40,8 +74,7 @@ def loginpage(request):
             else:
                 messages.error(request, "Invalid Email or Password")
                 return redirect("/login")
-            
-    
+
         return render(request, "login.html")
     
     
