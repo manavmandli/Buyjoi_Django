@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/9e444f4b7e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="flex items-center justify-center h-screen bg-blue-900">
+      <div class="bg-white rounded-2xl border shadow-xl p-10 max-w-lg">
+        <div class="flex flex-col items-center space-y-4">
+          <h1 class="font-bold text-2xl text-gray-700 w-4/6 text-center">
+            Reset Your Password
+          </h1>
+          <p class="text-sm text-gray-500 text-center w-5/6">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut laborea.
+          </p>
+          <input
+            id="emailInput"
+            type="text"
+            placeholder="Email"
+            class="placeholder-gray-500 rounded-2xl border pl-10 pr-4 border-gray-400 w-full py-2 focus:outline-none focus:border-blue-400"
+          />
+          <div class="flex items-center justify-between w-full">
+            <button
+              id="sendOTPButton"
+              class="bg-blue-400 text-white rounded-md font-semibold px-3 py-1"
+            >
+              Send OTP
+            </button>
+            <span id="timer" class="text-gray-500"></span>
+          </div>
+          <input
+            id="otpInput"
+            type="number"
+            placeholder="OTP"
+            class="placeholder-gray-500 rounded-2xl border pl-10 pr-4 border-gray-400 w-full py-2 focus:outline-none focus:border-blue-400"
+            disabled
+          />
+          <button
+            id="signInButton"
+            type="submit"
+            class="flex mt-2 items-center justify-center focus:outline-none text-white text-sm sm:text-base bg-blue-500 hover:bg-blue-600 rounded-full py-2 w-full transition duration-150 ease-in"
+            disabled
+          >
+            <span class="mr-2">Verify</span>
+            <span>
+              <svg
+                class="h-6 w-6"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const sendOTPButton = document.getElementById("sendOTPButton");
+      const otpInput = document.getElementById("otpInput");
+      const signInButton = document.getElementById("signInButton");
+      const timer = document.getElementById("timer");
+
+      sendOTPButton.addEventListener("click", function () {
+        sendOTPButton.disabled = true;
+        otpInput.disabled = false;
+        signInButton.disabled = true;
+        let seconds = 120;
+
+        const intervalId = setInterval(function () {
+          seconds--;
+          timer.textContent = `(${Math.floor(seconds / 60)}:${
+            seconds % 60 < 10 ? "0" : ""
+          }${seconds % 60})`;
+
+          if (seconds === 0) {
+            clearInterval(intervalId);
+            sendOTPButton.disabled = false;
+            otpInput.disabled = true;
+          }
+        }, 1000);
+
+        // Simulating OTP sending process
+        setTimeout(function () {
+          alert("OTP sent successfully!");
+          signInButton.disabled = false;
+        }, 2000);
+      });
+    </script>
+  </body>
+</html>

@@ -1,9 +1,8 @@
 buyjoi work 
 
 
-date:-1/07
-
-navbar
+-navbar updted 
 -social media icon as per admin say 
 -login using using username or email id
--login page html code written but not working
+-login with otp designing done
+-forget password whole design is completed
