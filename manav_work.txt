@@ -6,4 +6,5 @@ buyjoi work
 -login using using username or email id
 -login with otp designing done
 -forget password whole design is completed
--service section part updated ..
+-service section part done with inetegration
+-footer part done with inetegration

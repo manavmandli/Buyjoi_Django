@@ -1,4 +1,3 @@
-{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -10,107 +9,103 @@
       src="https://kit.fontawesome.com/9e444f4b7e.js"
       crossorigin="anonymous"
     ></script>
-    <style>
-      .bg-color {
-        background-color: #242f6f;
-      }
-    </style>
   </head>
   <body>
-    <!-- newsletter section -->
-<div class="w-full">
-  <div class="container flex flex-col xl:flex-row mx-auto px-5 py-8 xl:py-14 text-gray-500 bg-color">
-    <div class="w-full mb-6 xl:mb-0 sm:text-center">
-      <div class="mb-4 text-white text-3xl font-extrabold">
-        Join 2,000+ subscribers
-      </div>
+    <!-- newslatter section -->
+    <div class="w-full">
+      <div
+        class="container flex flex-col xl:flex-row mx-auto px-5 py-8 xl:py-14 text-gray-500 bg-blue-900"
+      >
+        <div class="w-full mb-6 xl:mb-0 sm:text-center">
+          <div class="mb-4 text-white text-3xl font-extrabold">
+            Join 2,000+ subscribers
+          </div>
 
-      <div class="text-lg text-white">
-        Join Buyjoi Email News Letter to receive Offers, Coupons etc.
+          <div class="text-lg text-white">
+            Stay in the loop with everything you need to know.
+          </div>
+        </div>
+
+        <div class="w-full">
+          <div class="flex flex-col justify-center sm:flex-row gap-3 w-full">
+            <input
+              type="text"
+              placeholder="Enter your email"
+              class="sm:w-2/4 h-12 p-3 text-gray-900 border border-solid border-blue-500 rounded-lg shadow"
+            />
+
+            <button
+              type="submit"
+              class="sm:w-1/4 h-12 text-white bg-blue-500 rounded-lg shadow transition-all duration-300 ease-in-out hover:bg-black"
+            >
+              Subscribe
+            </button>
+          </div>
+
+          <div class="mt-3 text-sm sm:text-center text-white">
+            We care about your data in our
+            <u
+              class="cursor-pointer transition-all duration-300 ease-in-out hover:text-blue-500"
+              >privacy policy</u
+            >.
+          </div>
+        </div>
       </div>
     </div>
-    <form action="{% url 'index' %}" method="POST" class="w-full">
-      {% csrf_token %}
-      <div class="flex flex-col justify-center sm:flex-row gap-3 w-full">
-        <input
-          type="email"
-          name="email"
-          required=""
-          placeholder="Enter your email"
-          class="sm:w-2/4 h-12 p-3 text-gray-900 border border-solid border-blue-500 rounded-lg shadow focus:outline-none focus:border-blue-600"
-        />
-        <button
-          type="submit"
-          class="sm:w-1/4 h-12 text-white bg-blue-500 rounded-lg shadow transition-all duration-300 ease-in-out hover:bg-black focus:outline-none"
-        >
-          Subscribe
-        </button>
-      </div>
-      <div class="mt-3 text-sm sm:text-center text-white">
-      We care about your data in our
-      <a href="{% url 'privacy' %}" target="_blank">
-      <u class="cursor-pointer transition-all duration-300 ease-in-out hover:text-blue-500">
-        privacy policy
-      </u>
-      </a>
-    </div>
-    </form>
-  </div>
-</div>
-<!-- newsletter section end -->
+    <!-- news letter section end  -->
     <div class="bg-gray-100 pt-5">
       <div
         class="max-w-screen-lg px-4 sm:px-6 text-gray-800 sm:grid md:grid-cols-4 sm:grid-cols-2 mx-auto"
       >
-        <div class="mr-20 mt-5">
+        <div class="p-5">
           <img
-            src="{% static '/img/buyjoilogoweb.jpg' %}"
+            src="static/img/buyjoilogoweb.jpg"
             height="auto"
             class="block mx-auto"
           />
           <p class="mt-5 text-center">
-            Buyjoi is an Indian e-commerce company, based in Kolkata, India. It was
-        founded in April 2022. Buyjoi is one of the largest online marketplaces
-        in India.
+            Buyjoi is an Indian e-commerce company, based in Kolkata, India. It
+            was founded in April 2022. Buyjoi is one of the largest online
+            marketplaces in India.
           </p>
         </div>
         <div class="p-5">
-          <div class="text-sm uppercase text-blue-500 font-bold">
+          <div class="text-sm uppercase text-indigo-600 font-bold">
             Our Category
           </div>
-          <a class="my-3 block" href=" {% url 'saree' %}"
+          <a class="my-3 block" href="/#"
             >Traditional Saree
             <span class="text-teal-600 text-xs p-1"></span></a
-          ><a class="my-3 block" href="{% url 'kurti' %}"
+          ><a class="my-3 block" href="/#"
             >Stylish Kurti<span class="text-teal-600 text-xs p-1"></span></a
-          ><a class="my-3 block" href="{% url 'lehenga' %}"
+          ><a class="my-3 block" href="/#"
             >Festive Lehenga
             <span class="text-teal-600 text-xs p-1">New</span></a
           >
         </div>
         <div class="p-5">
-          <div class="text-sm uppercase text-blue-500 font-bold">
+          <div class="text-sm uppercase text-indigo-600 font-bold">
             Important Links
           </div>
-          <a class="my-3 block" href="{% url 'contact' %}"
+          <a class="my-3 block" href="/#"
             >Help Center <span class="text-teal-600 text-xs p-1"></span></a
-          ><a class="my-3 block" href=" {% url 'privacy' %}"
+          ><a class="my-3 block" href="/#"
             >Privacy Policy <span class="text-teal-600 text-xs p-1"></span></a
-          ><a class="my-3 block" href="{% url 'contact' %}"
-            >Contact Us <span class="text-teal-600 text-xs p-1"></span
+          ><a class="my-3 block" href="/#"
+            >Conditions <span class="text-teal-600 text-xs p-1"></span
           ></a>
         </div>
         <div class="p-5">
-          <div class="text-sm uppercase text-blue-500 font-bold">
+          <div class="text-sm uppercase text-indigo-600 font-bold">
             Contact us
           </div>
           <a class="my-3 block" href="/#"
             >Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus,
             sint. <span class="text-teal-600 text-xs p-1"></span></a
-          ><a class="my-3 block" href="mailto:care@buyjoi.com"
+          ><a class="my-3 block" href="/#"
             >care@buyjoi.com<span class="text-teal-600 text-xs p-1"></span
           ></a>
-          <a class="my-3 block" href="tel:+91-9830440451"
+          <a class="my-3 block" href="/#"
             >+91 9830440451<span class="text-teal-600 text-xs p-1"></span
           ></a>
         </div>
@@ -122,7 +117,7 @@
         class="flex pb-5 px-3 m-auto pt-5 border-t text-gray-800 text-sm flex-col max-w-screen-lg items-center"
       >
         <div class="md:flex-auto md:flex-row-reverse mt-2 flex-row flex">
-          <a href="https://twitter.com/Buyjoi_com" target="_blank" class="w-6 mx-1">
+          <a href="/#" class="w-6 mx-1">
             <svg
               class="fill-current cursor-pointer text-gray-500 hover:text-indigo-600"
               width="100%"
@@ -159,7 +154,7 @@
               ></path>
             </svg>
           </a>
-          <a href="https://www.facebook.com/profile.php?id=100088068714675" target="_blank" class="w-6 mx-1">
+          <a href="/#" class="w-6 mx-1">
             <svg
               class="fill-current cursor-pointer text-gray-500 hover:text-indigo-600"
               width="100%"
@@ -187,7 +182,7 @@
               ></path>
             </svg>
           </a>
-          <a href="https://www.instagram.com/buyjoi/" target="_blank" class="w-6 mx-1">
+          <a href="/#" class="w-6 mx-1">
             <svg
               class="fill-current cursor-pointer text-gray-500 hover:text-indigo-600"
               width="100%"
@@ -208,7 +203,7 @@
               <g id="Layer_1">
                 <circle id="Oval" cx="12" cy="12" r="12"></circle>
                 <path
-                  id="instagram"
+                  id="Shape"
                   d="M19.05,8.362c0,-0.062 0,-0.125 -0.063,-0.187l0,-0.063c-0.187,-0.562
                      -0.687,-0.937 -1.312,-0.937l0.125,0c0,0 -2.438,-0.375 -5.75,-0.375c-3.25,0
                      -5.75,0.375 -5.75,0.375l0.125,0c-0.625,0 -1.125,0.375
@@ -228,7 +223,7 @@
               </g>
             </svg>
           </a>
-          <a href="https://www.linkedin.com/company/buyjoicom" target="_blank" class="w-6 mx-1">
+          <a href="/#" class="w-6 mx-1">
             <svg
               class="fill-current cursor-pointer text-gray-500 hover:text-indigo-600"
               width="100%"
@@ -266,29 +261,8 @@
             </svg>
           </a>
         </div>
-        <div class="my-5">Copyright © 2023 Buyjoi. All rights reserved.</div>
+        <div class="my-5">Copyright © 2022 Buyjoi. All rights reserved.</div>
       </div>
     </div>
-    <div class="z-50 fixed bottom-0 right-0 mb-4 mr-4 md:block hidden">
-  <a href="https://api.whatsapp.com/send?phone=919830440451&text=Hi,%20landing%20from%20Buyjoi.com" target="_blank" rel="noopener noreferrer" className=" text-white  p-2">
-      <img src="{% static '/img/whatsapp chat.png' %}" width="250" height="auto" >
-  </a>
-  </div>
-</div>
-
-
-<div class="z-50 fixed bottom-0 right-0 mb-4 mr-4 sm:block md:hidden hidden">
-  <a href="https://api.whatsapp.com/send?phone=919830440451&text=Hi,%20landing%20from%20Buyjoi.com" target="_blank" rel="noopener noreferrer" className=" text-white  p-2">
-      <img src="{% static '/img/whatsapp chat.png' %}" width="150" height="auto" >
-  </a>
-  </div>
-</div>
-
-<div class="z-50 fixed bottom-0 right-0 mb-4 mr-4 sm:hidden block">
-  <a href="https://api.whatsapp.com/send?phone=919830440451&text=Hi,%20landing%20from%20Buyjoi.com" target="_blank" rel="noopener noreferrer" className=" text-white  p-2">
-      <img src="{% static '/img/whatsapp chat.png' %}" width="100" height="auto" >
-  </a>
-  </div>
-</div>
   </body>
 </html>
