@@ -4,6 +4,8 @@ from django.contrib import messages
 from buyjoi.models import Product, Cart
 from django.contrib.auth.decorators import login_required
 from django.contrib.sessions.models import Session
+from django.shortcuts import get_object_or_404, redirect
+
 
 
 # def addtocart(request):
@@ -38,7 +40,7 @@ def addtocart(request):
     if request.method == 'POST':
         prod_id = int(request.POST.get('product_id'))
         product_check = Product.objects.filter(id=prod_id).first()
-
+        print(product_check)
         if product_check:
             if request.user.is_authenticated:
                 if Cart.objects.filter(user=request.user, product_id=prod_id).exists():
@@ -93,14 +95,20 @@ def addtocart(request):
 
 #manav code 
 def viewcart(request):
+    cart = request.session.get('cart', {}).values()
     if request.user.is_authenticated:
+        cart = request.session.get('cart', {})
+        for item in cart.values():
+            product_id = item['product_id']
+            quantity = item['product_qty']
+            findproduct = Product.objects.get(id=product_id)
+            sessioncartitem, created = Cart.objects.get_or_create(product_id=findproduct.id, product_qty=quantity, user=request.user)
         cart = Cart.objects.filter(user=request.user)
         context = {
             'cart': cart
         }
         return render(request, "cart.html", context)
     else:
-        cart = request.session.get('cart', [])
         context = {
             'cart': cart
         }

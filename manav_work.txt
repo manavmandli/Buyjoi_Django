@@ -8,3 +8,7 @@ buyjoi work
 -forget password whole design is completed
 -service section part done with inetegration
 -footer part done with inetegration
+-testimonials page design done 
+-cart product display design done 
+-wishlist page deign done 
+-without login product add to cart and after login that product ddisplay succesfully.

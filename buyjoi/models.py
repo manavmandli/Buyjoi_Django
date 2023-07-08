@@ -168,3 +168,4 @@ class contactform(models.Model):
     personname = models.CharField(max_length=1150, null=True)
     personemail = models.CharField(max_length=1150, null=True)
     personmessage = models.TextField(max_length=12500, null=False, blank=True)
+
