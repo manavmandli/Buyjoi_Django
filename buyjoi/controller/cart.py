@@ -97,8 +97,7 @@ def addtocart(request):
 def viewcart(request):
     cart = request.session.get('cart', {}).values()
     if request.user.is_authenticated:
-        cart = request.session.get('cart', {})
-        for item in cart.values():
+        for item in cart:
             product_id = item['product_id']
             quantity = item['product_qty']
             findproduct = Product.objects.get(id=product_id)
@@ -109,10 +108,16 @@ def viewcart(request):
         }
         return render(request, "cart.html", context)
     else:
+        products = [] 
+        for item in cart:
+            product_id = item['product_id']
+            quantity = item['product_qty']
+            findproduct = Product.objects.get(id=product_id)
+            products.append(findproduct)
         context = {
-            'cart': cart
+            'cart': products  
         }
-        return render(request, "cart.html", context)
+        return render(request, "sessioncart.html", context)
 
    
 def updatecart(request):
