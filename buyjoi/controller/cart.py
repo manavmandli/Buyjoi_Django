@@ -35,6 +35,7 @@ from django.shortcuts import get_object_or_404, redirect
 #     return redirect("/")
 
 
+
 # manav code 
 def addtocart(request):
     if request.method == 'POST':
@@ -80,22 +81,11 @@ def addtocart(request):
 
 
 
-# @login_required(login_url='loginpage')
-# def viewcart(request):
-#     if request.user.is_authenticated:
-#         cart = Cart.objects.filter(user=request.user)
-#         context = {
-#             'cart': cart
-#         }
-#         return render(request, "cart.html", context)
-#     else:
-#         messages.error(
-#             request, "Kindly login to access this section, Thank you.")
-#         return redirect("/")
 
 #manav code 
 def viewcart(request):
     cart = request.session.get('cart', {}).values()
+    total_quantity = sum(item['product_qty'] for item in cart)
     if request.user.is_authenticated:
         for item in cart:
             product_id = item['product_id']
@@ -115,7 +105,7 @@ def viewcart(request):
             findproduct = Product.objects.get(id=product_id)
             products.append(findproduct)
         context = {
-            'cart': products  
+            'cart': products, 
         }
         return render(request, "sessioncart.html", context)
 
@@ -140,3 +130,4 @@ def deletecartitem(request):
             cartitem.delete()
         return JsonResponse({'status:"Deleted Successfully"'})
     return redirect('/')
+
