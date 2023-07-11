@@ -37,6 +37,7 @@ urlpatterns = [
     path('cart' , cart.viewcart , name='cart'),
     path('update-cart' , cart.updatecart , name='updatecart'),
     path('delete-cart-item' , cart.deletecartitem , name='deletecartitem'),
+    path('remove_item_from_session/<int:item_id>/', cart.remove_item_from_session, name="remove_item_from_session"),
     
     path('wishlist' , wishlist.wishlistpage , name='wishlistpage'),
     path('add-to-wishlist' , wishlist.addtowishlist , name='addtowishlist'),

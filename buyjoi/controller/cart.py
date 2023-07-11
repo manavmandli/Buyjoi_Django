@@ -98,14 +98,14 @@ def viewcart(request):
         }
         return render(request, "cart.html", context)
     else:
-        products = [] 
+        products = []
         for item in cart:
             product_id = item['product_id']
             quantity = item['product_qty']
             findproduct = Product.objects.get(id=product_id)
             products.append(findproduct)
         context = {
-            'cart': products, 
+            'cart': products,
         }
         return render(request, "sessioncart.html", context)
 
@@ -131,3 +131,14 @@ def deletecartitem(request):
         return JsonResponse({'status:"Deleted Successfully"'})
     return redirect('/')
 
+def remove_item_from_session(request, item_id):
+    cart = request.session.get('cart', {}).values()
+    if 'cart' in request.session:
+        if item_id in cart:
+            print("----",cart[item_id])
+            del cart[item_id]
+            request.session['cart'] = cart
+            request.session.modified = True
+            request.session.save()
+            return JsonResponse({'status': 'Deleted Successfully'})
+    return redirect('/')

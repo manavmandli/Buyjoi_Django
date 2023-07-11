@@ -52,13 +52,15 @@
 
 
         <div>
-            <button
-              class="deletecartitemBtn text-sm bg-[#242f6f] text-white py-3 px-5 rounded-full hover:bg-gray-200 hover:text-black"
-              > <i class="fa fa-trash"></i>&nbsp;  Remove </button>
-
+          <a href="{% url 'remove_item_from_session' item_id=item.id %}">
+  <button type="button" class="text-sm bg-[#242f6f] text-white py-3 px-5 rounded-full hover:bg-gray-200 hover:text-black">
+    <i class="fa fa-trash"></i>&nbsp;  Remove
+  </button>
+</a>
               <button
-              class="addToWishlist text-sm bg-[#242f6f] text-white py-3 px-5 rounded-full hover:bg-gray-200 hover:text-black"
-              > <i class="fa-solid fa-heart"></i>&nbsp; Add to Wishlist </button>
+              type="button"
+              class=" text-sm bg-[#242f6f] text-white py-3 px-5 rounded-full hover:bg-gray-200 hover:text-black"
+              > <i class="fa-solid fa-heart"></i>&nbsp; Add to Wishlist </button></a>
         </div>
 
       </div>
