@@ -8,6 +8,9 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from buyjoi.forms import CustomUserForm
 from django.contrib.auth.models import User
+from django.contrib.auth.tokens import default_token_generator
+from django.core.mail import send_mail
+from django.contrib import messages
 
 @csrf_exempt
 def register(request):
@@ -94,6 +97,78 @@ def account(request):
     else:
         messages.error(request, "Kindly login to access this section, Thank you.")
         return redirect("/")
+
+
+def otp_verify(request):
+    # if 'otp' not in request.session:
+    #     return redirect('forgotpassword')
+    
+    if request.method == 'POST':
+        otp_input = request.POST.get('otp')
+        stored_otp = request.session.get('otp')
+        
+        if otp_input and stored_otp and otp_input == stored_otp:
+            # OTP verification successful
+            return redirect('new_password')
+        else:
+            messages.error(request, "Invalid OTP")
+    
+    return render(request, 'otp_verify.html')
+
+def new_password(request):
+    if 'otp' not in request.session:
+        return redirect('forgotpassword')
+    
+    if request.method == 'POST':
+        # Update the user's password
+        password = request.POST.get('password')
+        user = User.objects.get(email=user.email)
+        user.set_password(password)
+        user.save()
+        
+        # Clear OTP from session
+        del request.session['otp']
+        
+        messages.success(request, "Password updated successfully. You can now login with your new password.")
+        return redirect('login')
+    
+    return render(request, 'new_password.html')
+
+
+def forgotpassword(request):
+    if request.method == 'POST':
+        login_input = request.POST.get('username')
+        if login_input:
+            user = None
+            if '@' in login_input:
+                try:
+                    user = User.objects.get(email=login_input)
+                except User.DoesNotExist:
+                    messages.error(request, "Invalid email ID")
+            else:
+                try:
+                    user = User.objects.get(username=login_input)
+                except User.DoesNotExist:
+                    messages.error(request, "Invalid mobile number")
+            
+            if user:
+            
+            # Generate and send OTP to user
+            # otp = generate_otp()  # Implement your own OTP generation logic
+            # send_otp_to_user(user, otp)  # Implement your own OTP sending logic
+            
+            # # Store the OTP in session for verification
+            # request.session['otp'] = otp
+            
+                messages.success(request, "OTP sent successfully")
+                return redirect('otp_verify')
+        else:
+            messages.error(request, "You must enter a mobile number or email")
+    
+    return render(request, "forgot_password.html")
+
+
+
 
 
 

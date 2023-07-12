@@ -24,3 +24,5 @@ contact us sectio  change  as pe refrence in footer
 footer bottom apply payment options imgaes
 forget password theme same as login page 
 shop by categiory size small
+
+(addto cart and add to wishlist work in without login but product is not removing and something like this without login)

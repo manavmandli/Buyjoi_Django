@@ -92,6 +92,7 @@ def viewcart(request):
             quantity = item['product_qty']
             findproduct = Product.objects.get(id=product_id)
             sessioncartitem, created = Cart.objects.get_or_create(product_id=findproduct.id, product_qty=quantity, user=request.user)
+        request.session.pop('cart', None)
         cart = Cart.objects.filter(user=request.user)
         context = {
             'cart': cart

@@ -10,6 +10,7 @@
 
 {% include 'navbar.html' %}
 
+
 <div class="justify-center flex">
     <div
     class="flex flex-col mt-2 ml-4 sm:mr-4 bg-white shadow-md px-4 sm:px-6 md:px-8 lg:px-10 py-8 rounded-3xl w-50 max-w-md"
@@ -28,7 +29,7 @@
         
         <div class="flex flex-col mb-5">
           <label for="username" class="mb-1 text-sm tracking-wide text-gray-600"
-            >Username:</label
+            >Mobile/Email:</label
           >
           <div class="relative">
             <div
@@ -42,7 +43,7 @@
               type="text"
               name="username"
               class="text-sm placeholder-gray-500 pl-10 pr-4 rounded-2xl border border-gray-400 w-full py-2 focus:outline-none focus:border-blue-400"
-              placeholder="Enter your username"
+              placeholder="Enter your mobile/email"
             />
           </div>
         </div>
@@ -70,7 +71,12 @@
             />
           </div>
         </div>
-
+<div
+                class="mb-6 flex items-center justify-between text-blue-500 hover:text-blue-600"
+              >
+                <!--Forgot password link-->
+                <a href="{% url 'forgotpassword' %}">Forgot password?</a>
+              </div>
         <div class="flex w-full">
           <button
             type="submit"
@@ -129,16 +135,6 @@
     </div>
   </div>
   </div>
-
-
-
-
-
-
-
-
-
-
   {% include 'footer.html' %}
 
   {% endblock content %}

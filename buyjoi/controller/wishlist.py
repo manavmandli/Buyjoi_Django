@@ -34,6 +34,7 @@ def wishlistpage(request):
         for product_id, item in wishlist.items():
             findproduct = Product.objects.get(id=product_id)
             sessioncartitem, created = Wishlist.objects.get_or_create(product=findproduct, user=request.user)
+        request.session.pop('wishlist', None)
         wishlist = Wishlist.objects.filter(user=request.user)
         context = {'wishlistitem': wishlist}
         return render(request, "wishlist.html", context)
