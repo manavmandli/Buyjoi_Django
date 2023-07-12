@@ -11,6 +11,8 @@ from django.contrib.auth.models import User
 from django.contrib.auth.tokens import default_token_generator
 from django.core.mail import send_mail
 from django.contrib import messages
+import random
+import string
 
 @csrf_exempt
 def register(request):
@@ -97,11 +99,61 @@ def account(request):
     else:
         messages.error(request, "Kindly login to access this section, Thank you.")
         return redirect("/")
+    
 
+
+def generate_otp():
+    # Generate a random 6-digit OTP
+    digits = string.digits
+    otp = ''.join(random.choice(digits) for _ in range(6))
+    return otp
+
+def send_otp_to_user(user, otp):
+    # Implement your own logic to send the OTP to the user
+    # This could be via email, SMS, or any other method
+    # For testing purposes, let's print the OTP
+    print(f"OTP sent to user {user}: {otp}")
+
+def new_password(request):
+    if 'otp' not in request.session:
+        return redirect('forgotpassword')
+    
+    if request.method == 'POST':
+        # Get the new password and confirm password from the form
+        password = request.POST.get('password')
+        confirm_password = request.POST.get('confirm password')
+        
+        # Check if the passwords match
+        if password != confirm_password:
+            messages.error(request, "Passwords do not match.")
+            return redirect('new_password')
+        
+        # Get the user's email from the session
+        email = request.session['email']
+        
+        # Retrieve the user object from the database using the email
+        try:
+            user = User.objects.get(email=email)
+        except User.DoesNotExist:
+            messages.error(request, "User does not exist.")
+            return redirect('new_password')
+        
+        # Set the new password for the user
+        user.set_password(password)
+        user.save()
+        
+        # Clear OTP and email from session
+        del request.session['otp']
+        del request.session['email']
+        
+        messages.success(request, "Password updated successfully. You can now login with your new password.")
+        return redirect('loginpage')
+    
+    return render(request, 'new_password.html')
 
 def otp_verify(request):
-    # if 'otp' not in request.session:
-    #     return redirect('forgotpassword')
+    if 'otp' not in request.session:
+        return redirect('forgotpassword')
     
     if request.method == 'POST':
         otp_input = request.POST.get('otp')
@@ -112,27 +164,10 @@ def otp_verify(request):
             return redirect('new_password')
         else:
             messages.error(request, "Invalid OTP")
+            # this is just for testing
+            # return redirect('new_password')
     
     return render(request, 'otp_verify.html')
-
-def new_password(request):
-    if 'otp' not in request.session:
-        return redirect('forgotpassword')
-    
-    if request.method == 'POST':
-        # Update the user's password
-        password = request.POST.get('password')
-        user = User.objects.get(email=user.email)
-        user.set_password(password)
-        user.save()
-        
-        # Clear OTP from session
-        del request.session['otp']
-        
-        messages.success(request, "Password updated successfully. You can now login with your new password.")
-        return redirect('login')
-    
-    return render(request, 'new_password.html')
 
 
 def forgotpassword(request):
@@ -154,11 +189,11 @@ def forgotpassword(request):
             if user:
             
             # Generate and send OTP to user
-            # otp = generate_otp()  # Implement your own OTP generation logic
-            # send_otp_to_user(user, otp)  # Implement your own OTP sending logic
+                otp = generate_otp()  # Implement your own OTP generation logic
+                send_otp_to_user(user, otp)  # Implement your own OTP sending logic
             
             # # Store the OTP in session for verification
-            # request.session['otp'] = otp
+                request.session['otp'] = otp
             
                 messages.success(request, "OTP sent successfully")
                 return redirect('otp_verify')

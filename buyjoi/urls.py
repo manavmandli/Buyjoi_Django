@@ -33,7 +33,7 @@ urlpatterns = [
 
     path('forgot_password',authview.forgotpassword,name='forgotpassword'),
     path('otp-verify', authview.otp_verify, name='otp_verify'),
-    path('new_password',authview.new_password,name='newpassword'),
+    path('new_password',authview.new_password,name='new_password'),
 
     path('logout' , authview.logoutpage,   name='logoutpage'),
     path('account' , authview.account, name='account'),
