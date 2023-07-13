@@ -1,6 +1,5 @@
 buyjoi work 
 
-
 -navbar updted 
 -social media icon as per admin say 
 -login using using username or email id
@@ -12,11 +11,7 @@ buyjoi work
 -cart product display design done 
 -wishlist page deign done 
 -without login product add to cart and after login that product ddisplay succesfully.
-
-navbar email socila media icon up 50% upper side 
-profile sicon show user name 
-login otp is not required only forget password otp required
-service page icon alignmnet 
+ 
 logo ke niche ka content reduce and left alignment footer me 
 our category 
 ke points me bullet or font readuce sams as important links in footer 

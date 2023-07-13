@@ -23,6 +23,7 @@
       /* border: none; */
     }
     .search {
+      margin-left: 10rem;
       max-width: 27rem;
     }
     .shadow-lg {
@@ -37,11 +38,11 @@
       <div class="text-xs p-2">
         Upto 50% Off on all Product and Free Shipping (For India)
       </div>
-      <div class="socialicon p-2 flex justify-end mr-3">
-        <i class="fa-brands fa-facebook fa-lg mr-2" style="color: #000000"></i>
-        <i class="fa-brands fa-twitter fa-lg mr-2" style="color: #030303"></i>
-        <i class="fa-brands fa-linkedin fa-lg mr-2" style="color: #000000"></i>
-        <i class="fa-brands fa-instagram fa-lg mr-2" style="color: #000000"></i>
+      <div class="socialicon p-2 flex justify-end mr-1">
+        <i class="fa-brands fa-facebook fa-lg mr-3" style="color: #000000"></i>
+        <i class="fa-brands fa-twitter fa-lg mr-3" style="color: #030303"></i>
+        <i class="fa-brands fa-linkedin fa-lg mr-3" style="color: #000000"></i>
+        <i class="fa-brands fa-instagram fa-lg mr-3" style="color: #000000"></i>
       </div>
     </div>
     <header class="bg-color">
@@ -100,11 +101,11 @@
         </div>
 
         <!-- phone number -->
-        <div class="ml-auto md:w-48 hidden sm:flex flex-col place-items-end">
-          <span class="font-bold md:text-xl text-white">care@buyjoi.com</span>
-          <span class="font-semibold text-sm text-gray-400">Support 24/7</span>
-        </div>
+        <div
+          class="ml-auto md:w-48 hidden sm:flex flex-col place-items-end"
+        ></div>
 
+        <!-- buttons -->
         <!-- buttons -->
         <nav class="contents">
           <ul class="ml-4 xl:w-48 flex items-center justify-end">
@@ -153,6 +154,9 @@
                 </li>
               </ul>
             </li>
+            <li class="ml-2 lg:ml-4 relative inline-block">
+              <span class="text-white">Hello, {{ user.username }}</span>
+            </li>
             {% else %}
             <li class="ml-2 lg:ml-4 relative inline-block">
               <a class="profile-dropdown-toggle" href="{% url 'loginpage' %}">
@@ -191,9 +195,12 @@
                 </li>
               </ul>
             </li>
+            <li class="ml-2 lg:ml-4 relative inline-block">
+              <span class="text-white">Hello, Sign In</span>
+            </li>
             {% endif %}
             <li class="ml-2 lg:ml-4 relative inline-block">
-              <a class="" href=" {% url 'wishlistpage' %}">
+              <a class="" href="{% url 'wishlistpage' %}">
                 <svg
                   class="h-9 lg:h-10 p-2 text-white"
                   aria-hidden="true"
