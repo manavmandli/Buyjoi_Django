@@ -154,7 +154,7 @@ def new_password(request):
 def otp_verify(request):
     if 'otp' not in request.session:
         return redirect('forgotpassword')
-    
+     
     if request.method == 'POST':
         otp_input = request.POST.get('otp')
         stored_otp = request.session.get('otp')
