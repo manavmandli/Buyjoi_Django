@@ -12,6 +12,6 @@ buyjoi work
 -wishlist page deign done 
 -without login product add to cart and after login that product ddisplay succesfully.
  
-shop by categiory size small
 
 (addto cart and add to wishlist work in without login but product is not removing and something like this without login)
+-shop by category crousal remaining
