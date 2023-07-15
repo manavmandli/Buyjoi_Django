@@ -1,16 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.4.6/tailwind.min.css"
-    />
-  </head>
+{% extends 'main.html' %} {% load tailwind_tags %} {% load static %}
+{% block title %} Shopping Cart | {% endblock title %}
+{% block content %}
 
-  <body class="bg-gray-100">
+
+{% include 'navbar.html' %}
     <div class="container mx-auto mt-10">
       <div class="flex flex-col md:flex-row shadow-md my-10">
         <div class="md:w-3/4 bg-white px-10 py-10">
@@ -40,50 +33,54 @@
               Total
             </h3>
           </div>
+          {% if cart %}
           <div class="flex items-center hover:bg-gray-100 -mx-8 px-6 py-5">
+            {% for item in cart %}
             <div class="flex w-full md:w-2/5">
               <!-- product -->
               <div class="w-20">
                 <img
                   class="h-24"
-                  src="https://drive.google.com/uc?id=18KkAVkGFvaGNqPy2DIvTqmUH_nk39o3z"
+                  src="{{ item.product.product_image1.url }}"
                   alt=""
                 />
               </div>
               <div class="flex flex-col justify-between ml-4 flex-grow">
-                <span class="font-bold text-sm">Iphone 6S</span>
-                <span class="text-red-500 text-xs">Apple</span>
-                <a
-                  href="#"
-                  class="font-semibold hover:text-red-500 text-gray-500 text-xs"
-                  >Remove</a
-                >
+                <span class="font-bold text-sm">{{ item.product.name }}</span>
+                <span class="text-red-500 text-xs">{{ item.product.category }}</span>
+                <button
+              type="button"
+              onClick="history.go(0);"
+              class="deletecartitemBtn text-sm bg-[#242f6f] text-white py-3 px-5 rounded-full hover:bg-gray-200 hover:text-black"
+              > <i class="fa fa-trash"></i>&nbsp;  Remove </button>
               </div>
             </div>
             <div class="flex justify-center w-1/5">
-              <svg class="fill-current text-gray-600 w-3" viewBox="0 0 448 512">
-                <path
-                  d="M416 208H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"
-                />
-              </svg>
-              <input
-                class="mx-2 border text-center w-8"
-                type="text"
-                value="1"
-              />
-              <svg class="fill-current text-gray-600 w-3" viewBox="0 0 448 512">
-                <path
-                  d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"
-                />
-              </svg>
+              <span class="flex flex-row h-10 w-32 rounded-lg relative bg-transparent mt-1">
+            <button onClick="history.go(0);" data-action="decrement" type="button" class=" changeQuantity text-gray-600 bg-gray-300 hover:text-gray-700 hover:bg-gray-400 h-full w-20 rounded-l cursor-pointer outline-none">
+              <span class="m-auto text-2xl font-thin">−</span>
+            </button>
+              <input type="text" class=" qty_input focus:outline-none text-center w-full font-semibold text-md  md:text-basecursor-default flex items-center outline-none" name="custom-input-number" value="{{ item.product_qty }}"></input>
+              <button onClick="history.go(0);" data-action="increment" type="button" class=" changeQuantity bg-gray-300 text-gray-600 hover:text-gray-700 hover:bg-gray-400 h-full w-20 rounded-r cursor-pointer">
+            <span class="m-auto text-2xl font-thin">+</span>
+          </button>
+        </span>
             </div>
-            <span class="text-center w-1/5 font-semibold text-sm">$400.00</span>
-            <span class="text-center w-1/5 font-semibold text-sm">$400.00</span>
+            <span class="text-center w-1/5 font-semibold text-sm">Final Price: &nbsp; &#8377;{{ item.product.selling_price | stringformat:'d' }}</span>
+            <span class="text-center w-1/5 font-semibold text-sm">Final Price: &nbsp; &#8377;{{ item.product.selling_price | stringformat:'d' }}</span>
           </div>
 
           <!-- More product items -->
+{% endfor %}
+{% else %}
+<div class="text-lg font-semibold  text-center mx-[20%]">
+      Your CART is Empty. Please Add product in your cart.
 
-          <a href="#" class="flex font-semibold text-indigo-600 text-sm mt-10">
+    </div>
+
+
+{% endif %}
+          <a href="{% url 'index' %}" class="flex font-semibold text-indigo-600 text-sm mt-10">
             <svg
               class="fill-current mr-2 text-indigo-600 w-4"
               viewBox="0 0 448 512"
@@ -135,14 +132,16 @@
               <span>Total cost</span>
               <span>$600</span>
             </div>
-            <button
+           <a href=" {% url 'checkoutpage' %}"> <button
               class="bg-indigo-500 font-semibold hover:bg-indigo-600 py-3 text-sm text-white uppercase w-full"
             >
               Checkout
-            </button>
+            </button></a>
           </div>
         </div>
       </div>
     </div>
-  </body>
-</html>
+    {% include 'homesupport.html' %} {% include 'footer.html' %} 
+
+
+{% endblock content %}
