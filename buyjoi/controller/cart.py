@@ -5,6 +5,7 @@ from buyjoi.models import Product, Cart
 from django.contrib.auth.decorators import login_required
 from django.contrib.sessions.models import Session
 from django.shortcuts import get_object_or_404, redirect
+from django.db.models import F, Sum
 
 
 
@@ -86,7 +87,6 @@ def addtocart(request):
 def viewcart(request):
     cart = request.session.get('cart', {}).values()
     total_quantity = sum(item['product_qty'] for item in cart)
-    total_price = 0 
     if request.user.is_authenticated:
         for item in cart:
             product_id = item['product_id']
@@ -96,15 +96,13 @@ def viewcart(request):
         request.session.pop('cart', None)
         cart_item=0
         cart = Cart.objects.filter(user=request.user)
-
+        total_price = cart.aggregate(total_price=Sum(F('product__selling_price') * F('product_qty')))['total_price']
         for i in cart:
             cart_item=cart_item+1
-            i.total_price = i.product.selling_price * i.product_qty
-        total_price = sum(item.product.selling_price * item.product_qty for item in cart) 
         context = {
             'cart_item':cart_item,
             'cart': cart,
-            'totalamt':total_price
+            'total_price': total_price,
         }
         return render(request, "cart.html", context)
     else:

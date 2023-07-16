@@ -25,12 +25,12 @@
             <h3
               class="font-semibold text-center text-gray-600 text-xs uppercase w-1/5"
             >
-              Price
+              Original Price
             </h3>
             <h3
               class="font-semibold text-center text-gray-600 text-xs uppercase w-1/5"
             >
-              Total
+              Selling Price
             </h3>
           </div>
           {% if cart %}
@@ -80,8 +80,8 @@
                 </svg>
               </a>
             </div>
+            <span class="text-center w-1/5 font-semibold text-sm"> <strike>{{ item.product.original_price | stringformat:'d' }} &#8377;</strike></span>
             <span class="text-center w-1/5 font-semibold text-sm"> {{ item.product.selling_price | stringformat:'d' }}&#8377;</span>
-            <span class="text-center w-1/5 font-semibold text-sm">{{ item.totalamt | stringformat:'d' }}&#8377;</span>
           </div>
 {% endfor %}
           <!-- More product items -->
@@ -111,7 +111,7 @@
           <h1 class="font-semibold text-2xl border-b pb-8">Order Summary</h1>
           <div class="flex justify-between mt-10 mb-5">
             <span class="font-semibold text-sm uppercase">Items {{cart_item}}</span>
-            <span class="font-semibold text-sm">590$</span>
+            <span class="font-semibold text-sm">{{total_price}}&#8377;</span>
           </div>
           <div>
             <label class="font-medium inline-block mb-3 text-sm uppercase"
@@ -144,7 +144,7 @@
               class="flex font-semibold justify-between py-6 text-sm uppercase"
             >
               <span>Total cost</span>
-              <span>$600</span>
+              <span>{{total_price}}&#8377;</span>
             </div>
            <a href=" {% url 'checkoutpage' %}"> <button
               class="bg-blue-500 font-semibold hover:bg-green-600 py-3 text-sm text-white uppercase w-full"
