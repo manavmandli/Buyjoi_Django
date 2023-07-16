@@ -86,6 +86,7 @@ def addtocart(request):
 def viewcart(request):
     cart = request.session.get('cart', {}).values()
     total_quantity = sum(item['product_qty'] for item in cart)
+    total_price = 0 
     if request.user.is_authenticated:
         for item in cart:
             product_id = item['product_id']
@@ -93,9 +94,17 @@ def viewcart(request):
             findproduct = Product.objects.get(id=product_id)
             sessioncartitem, created = Cart.objects.get_or_create(product_id=findproduct.id, product_qty=quantity, user=request.user)
         request.session.pop('cart', None)
+        cart_item=0
         cart = Cart.objects.filter(user=request.user)
+
+        for i in cart:
+            cart_item=cart_item+1
+            i.total_price = i.product.selling_price * i.product_qty
+        total_price = sum(item.product.selling_price * item.product_qty for item in cart) 
         context = {
-            'cart': cart
+            'cart_item':cart_item,
+            'cart': cart,
+            'totalamt':total_price
         }
         return render(request, "cart.html", context)
     else:
@@ -110,27 +119,37 @@ def viewcart(request):
         }
         return render(request, "sessioncart.html", context)
 
-   
-def updatecart(request):
-    if request.method == 'POST':
-        prod_id = int(request.POST.get('product_id'))
-        if (Cart.objects.filter(user=request.user, product_id=prod_id)):
-            prod_qty = int(request.POST.get('product_qty'))
-            cart = Cart.objects.get(product_id=prod_id, user=request.user)
-            cart.product_qty = prod_qty
-            cart.save()
-            return JsonResponse({'status': "Updated Successfully"})
-    return redirect('/')
+
+def minus_cart(request, product_id):
+    cp = Cart.objects.get(user=request.user, product_id=product_id)
+    if cp.product_qty == 1:
+        cp.delete()
+    else:
+        cp.product_qty -= 1
+        cp.save()
+        messages.success(request, 'Quantity updated successfully.')
+    return redirect('cart')  
 
 
-def deletecartitem(request):
-    if request.method == 'POST':
-        prod_id = int(request.POST.get('product_id'))
-        if(Cart.objects.filter(user=request.user, product_id=prod_id)):
-            cartitem = Cart.objects.get(product_id=prod_id, user=request.user)
-            cartitem.delete()
-        return JsonResponse({'status:"Deleted Successfully"'})
-    return redirect('/')
+def plus_cart(request, product_id):
+    cp = Cart.objects.get(user=request.user, product_id=product_id)
+    if cp:
+        cp.product_qty += 1
+        cp.save()
+        messages.success(request, 'Quantity updated successfully.')
+    else:
+        messages.error(request, 'Cart item not found.')
+    return redirect('cart')
+
+def deletecartitem(request, product_id):
+    cart_item = get_object_or_404(Cart, user=request.user, product_id=product_id)
+
+    if cart_item:
+        cart_item.delete()
+        messages.success(request, 'Cart item deleted successfully.')
+    else:
+        messages.error(request, 'Cart item not found.')
+    return redirect('cart')
 
 def remove_item_from_session(request, item_id):
     cart = request.session.get('cart', {}).values()
