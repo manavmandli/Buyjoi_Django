@@ -1,8 +1,10 @@
 from django.http import JsonResponse
 from django.shortcuts import render, redirect
+from django.urls import reverse
 from django.contrib import messages
 from buyjoi.models import Product, Cart, Wishlist
 from django.contrib.auth.decorators import login_required
+from django.shortcuts import get_object_or_404, redirect
 
 # @login_required(login_url='loginpage')
 # def wishlistpage(request):
@@ -27,7 +29,7 @@ from django.contrib.auth.decorators import login_required
 # 			return JsonResponse({'status':"Login to continue"})
 # 	return redirect('/')
 
-#manav code
+# manav code
 def wishlistpage(request):
     wishlist = request.session.get('wishlist', {})
     if request.user.is_authenticated:
@@ -46,44 +48,52 @@ def wishlistpage(request):
         }
         return render(request, "sessionwishlist.html", context)
 
-def addtowishlist(request):
-    if request.method == 'POST':
-        prod_id = int(request.POST.get('product_id'))
-        product_check = Product.objects.get(id=prod_id)
-        if product_check:
-            if request.user.is_authenticated:
-                if Wishlist.objects.filter(user=request.user, product_id=prod_id).exists():
-                    return JsonResponse({'status': "Product already in wishlist"})
-                else:
-                    Wishlist.objects.create(user=request.user, product_id=prod_id)
-                    return JsonResponse({'status': "Product added to wishlist"})
-            else:
-                # Create a session-based wishlist
-                wishlist = request.session.get('wishlist', {})
-                if prod_id in wishlist:
-                    return JsonResponse({'status': "Product already in wishlist"})
-                else:
-                    wishlist[prod_id] = True
-                    request.session['wishlist'] = wishlist
-                    return JsonResponse({'status': "Product added to wishlist"})
-        else:
-            return JsonResponse({'status': "No such product found"})
-    return redirect('/')
-
-
-def deletewishlistitem(request):
-    if request.method == 'POST':
+def addtowishlist(request, product_id):
+    prod_id = int(product_id)
+    product_check = Product.objects.filter(id=prod_id)
+    if product_check:
         if request.user.is_authenticated:
-            prod_id = int(request.POST.get('product_id'))
-            
-            if(Wishlist.objects.filter(user=request.user, product_id=prod_id)):
-                wishlistitem = Wishlist.objects.get(product_id=prod_id)
-                wishlistitem.delete()
-                return JsonResponse({'status':"Product removed from wishlist"})
+            if Wishlist.objects.filter(user=request.user, product=prod_id).exists():
+                messages.error(request, 'Product is already in your wishlist.')
             else:
-                Wishlist.objects.create(user=request.user, product_id=prod_id)
-                return JsonResponse({'status':"Product not found in wishlist"})
+                Wishlist.objects.create(user=request.user, product=prod_id)
+                messages.success(request, 'Product added to your wishlist.')
         else:
-            return JsonResponse({'status':"Login to continue"})
+            # Create a session-based wishlist
+            wishlist = request.session.get('wishlist', {})
+            if prod_id in wishlist:
+                messages.error(request, 'Product is already in your wishlist.')
+            else:
+                prod_qty = 1  # Assuming a default quantity of 1 for session-based wishlist
+                wishlist[prod_id] = {
+                    'product_id': prod_id,
+                }
+                request.session['wishlist'] = wishlist
+                messages.success(request, 'Product added to your wishlist.')
+            # next_page = request.GET.get('next')
+            # product = Product.objects.get(id=product_id)
+            # next_page =reverse('productview', args=[product.category.slug, product.slug])
+            # add_to_wishlist_url = reverse('addtowishlist', args=[prod_id]) + '?next=' + next_page
+            # if next_page:
+            #     return redirect(next_page)
+    else:
+        messages.error(request, 'No such product found.')
+    return redirect('wishlistpage')
 
-    return redirect('/')
+def deletewishlistitem(request, item_id):
+    if request.user.is_authenticated:
+        cart_item = get_object_or_404(Wishlist, user=request.user, product_id=item_id)
+        cart_item.delete()
+        messages.success(request, 'Wishlist item deleted successfully.')
+    else:
+        session_cart = request.session.get('wishlist', {})
+        if str(item_id) in session_cart:
+            del session_cart[str(item_id)]
+            request.session['wishlist'] = session_cart
+            messages.success(request, 'wishlist item deleted successfully.')
+        else:
+            messages.error(request, 'wishlist item not found.')
+
+    return redirect('wishlistpage')
+
+

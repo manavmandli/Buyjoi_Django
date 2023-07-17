@@ -76,23 +76,23 @@ $(document).ready(function () {
 
 
 
-  $('.addToWishlist').click(function (e) {
-    e.preventDefault();
+  // $('.addToWishlist').click(function (e) {
+  //   e.preventDefault();
 
-    var product_id = $(this).closest('.product_data').find('.prod_id').val();
-    var token = $('input[name=csrfmiddlewaretoken]').val();
-    $.ajax({
-      method: "POST",
-      url: "/add-to-wishlist",
-      data: {
-        'product_id': product_id,
-        csrfmiddlewaretoken: token,
-      },
-      success: function (response) {
-        alertify.success(response.status);
-      },
-    });
-  });
+  //   var product_id = $(this).closest('.product_data').find('.prod_id').val();
+  //   var token = $('input[name=csrfmiddlewaretoken]').val();
+  //   $.ajax({
+  //     method: "POST",
+  //     url: "/add-to-wishlist",
+  //     data: {
+  //       'product_id': product_id,
+  //       csrfmiddlewaretoken: token,
+  //     },
+  //     success: function (response) {
+  //       alertify.success(response.status);
+  //     },
+  //   });
+  // });
 
 
   $('.changeQuantity').click(function (e) {

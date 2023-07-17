@@ -42,7 +42,6 @@ def addtocart(request):
     if request.method == 'POST':
         prod_id = int(request.POST.get('product_id'))
         product_check = Product.objects.filter(id=prod_id).first()
-        print(product_check)
         if product_check:
             if request.user.is_authenticated:
                 if Cart.objects.filter(user=request.user, product_id=prod_id).exists():

@@ -51,7 +51,10 @@
 
 
                     <th class=" text-center">
-                    <button onClick="history.go(0);" type="button" class="deletewishlistbtn shadow hover:border-[#242f6f] border-[#242f6f] border-2 rounded-full focus:outline-none focus:border-[#242f6f] px-4 py-2 text-white bg-[#242f6f] hover:bg-white hover:text-black">Remove</button>
+                    <!-- <button onClick="history.go(0);" type="button" class="deletewishlistbtn shadow hover:border-[#242f6f] border-[#242f6f] border-2 rounded-full focus:outline-none focus:border-[#242f6f] px-4 py-2 text-white bg-[#242f6f] hover:bg-white hover:text-black">Remove</button> -->
+                    <a href="{% url 'deletewishlistitem' item.id %}">
+<i class="fa fa-trash "></i>&nbsp;
+                </a>
 
                        
                     </th>

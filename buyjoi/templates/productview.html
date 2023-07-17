@@ -119,9 +119,10 @@
         class="addToCartBtn shadow hover:border-[#242f6f] border-[#242f6f] mx-3 border-2 rounded-full focus:outline-none focus:border-[#242f6f] mt-4 px-7 py-2 text-white bg-[#242f6f] hover:bg-white hover:text-black"
         ><i class="fa-solid fa-cart-shopping"></i>&nbsp; Add to Cart
       </button>
+      
       <button type="button"
-        class="shadow addToWishlist hover:border-[#242f6f] border-[#242f6f] mx-3 border-2 rounded-full focus:outline-none focus:border-[#242f6f] mt-4 px-7 py-2 text-white bg-[#242f6f] hover:bg-white hover:text-black"
-        ><i class="fa-solid fa-heart"></i>&nbsp; Add to Wishlist 
+        class="shadow hover:border-[#242f6f] border-[#242f6f] mx-3 border-2 rounded-full focus:outline-none focus:border-[#242f6f] mt-4 px-7 py-2 text-white bg-[#242f6f] hover:bg-white hover:text-black"
+        ><i class="fa-solid fa-heart"></i>&nbsp; <a href="{% url 'addtowishlist' products.id %}">Add to Wishlist </a>
       </button>
         {% else %}
 

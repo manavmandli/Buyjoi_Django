@@ -13,5 +13,5 @@ buyjoi work
 -without login product add to cart and after login that product ddisplay succesfully.
  
 
-(addto cart and add to wishlist work in without login but product is not removing and something like this without login)
--shop by category crousal remaining
+without login add to cart and add to wishlist and removing all function completed work 
+login otp working 
