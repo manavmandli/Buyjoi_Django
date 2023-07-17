@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+
+    <style>
+      body {
+        background: aliceblue;
+      }
+      .gtco-testimonials {
+        position: relative;
+        margin-top: 30px;
+      }
+      .gtco-testimonials h2 {
+        font-size: 30px;
+        text-align: center;
+        color: #333;
+        margin-bottom: 50px;
+      }
+      .gtco-testimonials .owl-stage-outer {
+        padding: 30px 0;
+      }
+      .gtco-testimonials .owl-nav {
+        display: none;
+      }
+      .gtco-testimonials .owl-dots {
+        text-align: center;
+      }
+      .gtco-testimonials .owl-dots span {
+        position: relative;
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+        display: block;
+        background: #fff;
+        border: 2px solid #01b0f8;
+        margin: 0 5px;
+      }
+      .gtco-testimonials .owl-dots .active {
+        box-shadow: none;
+      }
+      .gtco-testimonials .owl-dots .active span {
+        background: #01b0f8;
+        box-shadow: none;
+        height: 12px;
+        width: 12px;
+        margin-bottom: -1px;
+      }
+      .gtco-testimonials .card {
+        background: #fff;
+        box-shadow: 0 8px 30px -7px #c9dff0;
+        margin: 0 20px;
+        padding: 0 10px;
+        border-radius: 20px;
+        border: 0;
+      }
+      .gtco-testimonials .card .card-img-top {
+        max-width: 100px;
+        border-radius: 50%;
+        margin: 15px auto 0;
+        box-shadow: 0 8px 20px -4px #95abbb;
+        width: 100px;
+        height: 100px;
+      }
+      .gtco-testimonials .card h5 {
+        color: #01b0f8;
+        font-size: 21px;
+        line-height: 1.3;
+      }
+      .gtco-testimonials .card h5 span {
+        font-size: 18px;
+        color: #666;
+      }
+      .gtco-testimonials .card p {
+        font-size: 18px;
+        color: #555;
+        padding-bottom: 15px;
+      }
+      .gtco-testimonials .active {
+        opacity: 0.5;
+        transition: all 0.3s;
+      }
+      .gtco-testimonials .center {
+        opacity: 1;
+      }
+      .gtco-testimonials .center h5 {
+        font-size: 24px;
+      }
+      .gtco-testimonials .center h5 span {
+        font-size: 20px;
+      }
+      .gtco-testimonials .center .card-img-top {
+        max-width: 100%;
+        height: 120px;
+        width: 120px;
+      }
+      @media (max-width: 767px) {
+        .gtco-testimonials {
+          margin-top: 20px;
+        }
+      }
+      .owl-carousel .owl-nav button.owl-next,
+      .owl-carousel .owl-nav button.owl-prev {
+        outline: 0;
+      }
+      .owl-carousel button.owl-dot {
+        outline: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="gtco-testimonials">
+      <h2>- - - - - Testimonial - - - - -</h2>
+      <div class="owl-carousel owl-carousel1 owl-theme">
+        <div>
+          <div class="card text-center">
+            <img
+              class="card-img-top"
+              src="/static/img/testi/testimonial.jpg"
+              alt=""
+            />
+            <div class="card-body">
+              <h5>
+                Radha Gunjan <br />
+                <span> School Teacher, Delhi </span>
+              </h5>
+              <p class="card-text">
+                “Cloth Material is Good and the Product Colors are exactly
+                  same as shown in the image. Awesome colour, Beautiful design.
+                  It's even more Beautiful than the picture here. Very much
+                  satisfied. Thank you”
+              </p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="card text-center">
+            <img
+              class="card-img-top"
+              src="/static/img/testi/testimonial1.jpg"
+              alt=""
+            />
+            <div class="card-body">
+              <h5>
+                Suraj Gupta<br />
+                <span> Student, Lakhnaw </span>
+              </h5>
+              <p class="card-text">
+               “I bought a Handicrafted Saree for my Mother. Amazing Saree nice product, According to price is perfect
+              and nice for occasions. Thanks”
+              </p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="card text-center">
+            <img
+              class="card-img-top"
+              src="/static/img/testi/testimonial2.jpg"
+              alt=""
+            />
+            <div class="card-body">
+              <h5>
+                Arvind Kumar<br />
+                <span> Engineer, Bihar </span>
+              </h5>
+              <p class="card-text">
+                “My girlfriend's favorite portal, she feel amazing here. Dresses perfect fit as expected. 
+                  Overall dresses definitely gives a good
+                  look.”
+              </p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="card text-center">
+            <img
+              class="card-img-top"
+              src="/static/img/testi/testimonial3.jpg"
+              alt=""
+            />
+            <div class="card-body">
+              <h5>
+                Reema Kumari<br />
+                <span> Model, Delhi </span>
+              </h5>
+              <p class="card-text">
+               “I bought a Salwar. Exactly the same shown in the picture.
+                  Loved the quality and the fit is perfect. Beautiful dress..
+                  must buy. Thanks”
+              </p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="card text-center">
+            <img
+              class="card-img-top"
+              src="/static/img/testi/testimonial4.jpg"
+              alt=""
+            />
+            <div class="card-body">
+              <h5>
+                Voomi William<br />
+                <span> Designer, Goa </span>
+              </h5>
+              <p class="card-text">
+               “I love this product! It goes with everything and it fits
+                  really well. The quality is exactly what I wanted, it isn't
+                  too thin that ruins shape, it isn't too thick too make you
+                  feel hot. Just perfect and a wardrobe essential. I bought both
+                  white and black.”
+              </p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="card text-center">
+            <img
+              class="card-img-top"
+              src="/static/img/testi/testimonial5.jpg"
+              alt=""
+            />
+            <div class="card-body">
+              <h5>
+                Uma Siwani<br />
+                <span> Dancer, Mumbai </span>
+              </h5>
+              <p class="card-text">
+                “Amazing buy seriously ❤️ perfect fit perfect stitching. My
+                  best purchase ever from Buyjoi in this 7 yrs of experience.
+                  Seriously guys if you are ok with the length just buy it. I
+                  was sceptical before buying bt now am glad I had my hands on
+                  this.”
+              </p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="card text-center">
+            <img
+              class="card-img-top"
+              src="/static/img/testi/testimonial6.jpg"
+              alt=""
+            />
+            <div class="card-body">
+              <h5>
+                Payal Ghosh<br />
+                <span> Doctor, Kolkata </span>
+              </h5>
+              <p class="card-text">
+                “Beautiful and light weight looks perfect for small family
+                  function. Good product according to price. Stiching quality
+                  nice. Thank you”
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      (function () {
+        "use strict";
+
+        var carousels = function () {
+          $(".owl-carousel1").owlCarousel({
+            loop: true,
+            center: true,
+            margin: 0,
+            responsiveClass: true,
+            nav: false,
+            responsive: {
+              0: {
+                items: 1,
+                nav: false,
+              },
+              680: {
+                items: 2,
+                nav: false,
+                loop: false,
+              },
+              1000: {
+                items: 3,
+                nav: true,
+              },
+            },
+          });
+        };
+
+        (function ($) {
+          carousels();
+        })(jQuery);
+      })();
+    </script>
+  </body>
+</html>

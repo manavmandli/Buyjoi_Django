@@ -107,56 +107,78 @@ def viewcart(request):
         return render(request, "cart.html", context)
     else:
         products = []
+        total_price = 0
         for item in cart:
             product_id = item['product_id']
             quantity = item['product_qty']
             findproduct = Product.objects.get(id=product_id)
+            findproduct.product_qty = quantity  # Add product_qty to the product object
             products.append(findproduct)
+            total_price += findproduct.selling_price * quantity
+
         context = {
             'cart': products,
+            'total_price': total_price,
+            'cart_item': total_quantity,
         }
         return render(request, "sessioncart.html", context)
 
 
 def minus_cart(request, product_id):
-    cp = Cart.objects.get(user=request.user, product_id=product_id)
-    if cp.product_qty == 1:
-        cp.delete()
-    else:
-        cp.product_qty -= 1
-        cp.save()
+    if request.user.is_authenticated:
+        cp = get_object_or_404(Cart, user=request.user, product_id=product_id)
+        if cp.product_qty == 1:
+            cp.delete()
+        else:
+            cp.product_qty -= 1
+            cp.save()
         messages.success(request, 'Quantity updated successfully.')
-    return redirect('cart')  
+    else:
+        session_cart = request.session.get('cart', {})
+        cart_item = session_cart.get(str(product_id))
+        if cart_item:
+            if cart_item['product_qty'] == 1:
+                del session_cart[str(product_id)]
+            else:
+                cart_item['product_qty'] -= 1
+            request.session['cart'] = session_cart
+            messages.success(request, 'Quantity updated successfully.')
+        else:
+            messages.error(request, 'Cart item not found.')
 
+    return redirect('cart')
 
 def plus_cart(request, product_id):
-    cp = Cart.objects.get(user=request.user, product_id=product_id)
-    if cp:
+    if request.user.is_authenticated:
+        cp = get_object_or_404(Cart, user=request.user, product_id=product_id)
         cp.product_qty += 1
         cp.save()
         messages.success(request, 'Quantity updated successfully.')
     else:
-        messages.error(request, 'Cart item not found.')
+        session_cart = request.session.get('cart', {})
+        cart_item = session_cart.get(str(product_id))
+        if cart_item:
+            cart_item['product_qty'] += 1
+            request.session['cart'] = session_cart
+            messages.success(request, 'Quantity updated successfully.')
+        else:
+            messages.error(request, 'Cart item not found.')
+
     return redirect('cart')
 
-def deletecartitem(request, product_id):
-    cart_item = get_object_or_404(Cart, user=request.user, product_id=product_id)
 
-    if cart_item:
+def deletecartitem(request, product_id):
+    if request.user.is_authenticated:
+        cart_item = get_object_or_404(Cart, user=request.user, product_id=product_id)
         cart_item.delete()
         messages.success(request, 'Cart item deleted successfully.')
     else:
-        messages.error(request, 'Cart item not found.')
-    return redirect('cart')
+        session_cart = request.session.get('cart', {})
+        if str(product_id) in session_cart:
+            del session_cart[str(product_id)]
+            request.session['cart'] = session_cart
+            messages.success(request, 'Cart item deleted successfully.')
+        else:
+            messages.error(request, 'Cart item not found.')
 
-def remove_item_from_session(request, item_id):
-    cart = request.session.get('cart', {}).values()
-    if 'cart' in request.session:
-        if item_id in cart:
-            print("----",cart[item_id])
-            del cart[item_id]
-            request.session['cart'] = cart
-            request.session.modified = True
-            request.session.save()
-            return JsonResponse({'status': 'Deleted Successfully'})
-    return redirect('/')
+    return redirect('cart')
