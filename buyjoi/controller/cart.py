@@ -38,45 +38,39 @@ from django.db.models import F, Sum
 
 
 # manav code 
-def addtocart(request):
-    if request.method == 'POST':
-        prod_id = int(request.POST.get('product_id'))
-        product_check = Product.objects.filter(id=prod_id).first()
-        if product_check:
-            if request.user.is_authenticated:
-                if Cart.objects.filter(user=request.user, product_id=prod_id).exists():
-                    return JsonResponse({'status': "Product Already in Cart"})
-                else:
-                    prod_qty = int(request.POST.get('product_qty'))
-
-                    if product_check.quantity >= prod_qty:
-                        Cart.objects.create(
-                            user=request.user, product_id=prod_id, product_qty=prod_qty)
-                        return JsonResponse({'status': "Product added successfully"})
-                    else:
-                        return JsonResponse({'status': "Only " + str(product_check.quantity) + " quantity available"})
+def addtocart(request, product_id):
+    prod_id = int(product_id)
+    product_check = Product.objects.filter(id=prod_id).first()
+    if product_check:
+        if request.user.is_authenticated:
+            if Cart.objects.filter(user=request.user, product_id=prod_id).exists():
+                messages.error(request, 'Product is already in your cart.')
             else:
-                cart = request.session.get('cart', {})
-
-                if prod_id in cart:
-                    return JsonResponse({'status': "Product Already in Cart"})
+                prod_qty = int(request.POST.get('product_qty', 0))  # Set default value to 0
+                if product_check.quantity >= prod_qty:
+                    Cart.objects.create(
+                        user=request.user, product_id=prod_id, product_qty=prod_qty)
+                    messages.success(request, 'Product added to your cart.')
                 else:
-                    prod_qty = int(request.POST.get('product_qty'))
-
-                    if product_check.quantity >= prod_qty:
-                        cart[prod_id] = {
-                            'product_id': prod_id,
-                            'product_qty': prod_qty,
-                        }
-                        request.session['cart'] = cart
-                        return JsonResponse({'status': "Product added successfully"})
-                    else:
-                        return JsonResponse({'status': "Only " + str(product_check.quantity) + " quantity available"})
-
+                    return JsonResponse({'status': "Only " + str(product_check.quantity) + " quantity available"})
         else:
-            return JsonResponse({'status': "No such product found"})
-
-    return redirect("/")
+            cart = request.session.get('cart', {})
+            if prod_id in cart:
+                messages.error(request, 'Product is already in your cart.')
+            else:
+                prod_qty = 1    # Set default value to 0
+                if product_check.quantity >= prod_qty:
+                    cart[prod_id] = {
+                        'product_id': prod_id,
+                        'product_qty': prod_qty,
+                    }
+                    request.session['cart'] = cart
+                    messages.success(request, 'Product added to your cart.')
+                else:
+                    return JsonResponse({'status': "Only " + str(product_check.quantity) + " quantity available"})
+    else:
+        messages.error(request, 'No such product found.')
+    return redirect('cart')
 
 
 
