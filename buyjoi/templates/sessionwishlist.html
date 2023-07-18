@@ -40,7 +40,7 @@
         <div class="md:w-3/4 bg-white px-4 md:px-10 py-10">
           <div class="flex justify-between border-b pb-8">
             <h1 class="font-semibold text-2xl">Wishlist</h1>
-            <h2 class="font-semibold text-2xl">3 Items</h2>
+            <h2 class="font-semibold text-2xl">{{total_items}} Items</h2>
           </div>
           <div class="flex flex-col md:flex-row mt-4 md:mt-10 mb-5">
             <h3
@@ -125,8 +125,8 @@
         <div id="summary" class="md:w-1/4 px-8 py-10">
           <h1 class="font-semibold text-2xl border-b pb-8">Order Summary</h1>
           <div class="flex justify-between mt-10 mb-5">
-            <span class="font-semibold text-sm uppercase">Items 3</span>
-            <span class="font-semibold text-sm">590$</span>
+            <span class="font-semibold text-sm uppercase">Items {{total_items}}</span>
+            <span class="font-semibold text-sm">{{total_amount}}</span>
           </div>
           <div>
             <label class="font-medium inline-block mb-3 text-sm uppercase"
@@ -159,12 +159,12 @@
               class="flex font-semibold justify-between py-6 text-sm uppercase"
             >
               <span>Total cost</span>
-              <span>$600</span>
+              <span>{{total_amount}}</span>
             </div>
             <button
               class="bg-indigo-500 font-semibold hover:bg-indigo-600 py-3 text-sm text-white uppercase w-full"
             >
-              Added to Cart
+             Add to Cart
             </button>
           </div>
         </div>

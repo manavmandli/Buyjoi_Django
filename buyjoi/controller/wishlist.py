@@ -32,21 +32,28 @@ from django.shortcuts import get_object_or_404, redirect
 # manav code
 def wishlistpage(request):
     wishlist = request.session.get('wishlist', {})
+    total_items = len(wishlist)  # Total number of wishlist items
+
     if request.user.is_authenticated:
         for product_id, item in wishlist.items():
             findproduct = Product.objects.get(id=product_id)
             sessioncartitem, created = Wishlist.objects.get_or_create(product=findproduct, user=request.user)
         request.session.pop('wishlist', None)
         wishlist = Wishlist.objects.filter(user=request.user)
-        context = {'wishlistitem': wishlist}
+        total_amount = sum(item.product.selling_price for item in wishlist)  # Total amount of wishlist items
+        context = {'wishlistitem': wishlist, 'total_items': total_items, 'total_amount': total_amount}
         return render(request, "wishlist.html", context)
     else:
         product_ids = list(wishlist.keys())
         products = Product.objects.filter(id__in=product_ids)
+        total_amount = sum(products.values_list('selling_price', flat=True))  # Total amount of wishlist items
         context = {
-            'wishlist': products
+            'wishlist': products,
+            'total_items': total_items,
+            'total_amount': total_amount
         }
         return render(request, "sessionwishlist.html", context)
+
 
 def addtowishlist(request, product_id):
     prod_id = int(product_id)
