@@ -39,6 +39,7 @@ urlpatterns = [
     path('account' , authview.account, name='account'),
     
     path('add-to-cart/<int:product_id>/' , cart.addtocart, name='addtocart'),
+    path('wishlist-to-cart',cart.wishlisttocart,name="wishlisttocart"),
     path('cart' , cart.viewcart , name='cart'),
     path('delete-cart-item/<int:product_id>/', cart.deletecartitem, name='deletecartitem'),
     path('plus-cart/<int:product_id>/', cart.plus_cart, name="plus-cart"),

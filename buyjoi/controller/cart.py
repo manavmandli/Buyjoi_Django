@@ -74,8 +74,23 @@ def addtocart(request, product_id):
 
 
 
+@login_required(login_url='loginpage')  # Replace 'login' with your actual login URL pattern name
+def wishlisttocart(request):
+    # Add wishlist items to cart for authenticated user
+    wishlist_products = Product.objects.filter(user=request.user).all()
 
+    for product in wishlist_products:
+        if Cart.objects.filter(user=request.user, product_id=product.id).exists():
+            messages.error(request, f'Product "{product.name}" is already in your cart.')
+        else:
+            if product.quantity >= 1:
+                Cart.objects.create(user=request.user, product_id=product.id, product_qty=1)
+                messages.success(request, 'Wishlist items added to your cart.')
+            else:
+                messages.warning(request, f'Product "{product.name}" is out of stock.')
 
+    return redirect('cart')
+ 
 #manav code 
 def viewcart(request):
     cart = request.session.get('cart', {}).values()

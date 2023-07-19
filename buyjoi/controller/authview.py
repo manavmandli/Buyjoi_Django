@@ -13,6 +13,8 @@ from django.core.mail import send_mail
 from django.contrib import messages
 import random
 import string
+import os
+from twilio.rest import Client
 
 @csrf_exempt
 def register(request):
@@ -112,6 +114,16 @@ def send_otp_to_user(user, otp):
     # Implement your own logic to send the OTP to the user
     # This could be via email, SMS, or any other method
     # For testing purposes, let's print the OTP
+    # TWILIO_ACCOUNT_SID='AC8520ba055b87e991d581cf514a4cca0b'
+    # TWILIO_AUTH_TOKEN='8ce0a5c2ddfbc1d32a3dda3990aa7ca4'
+    # account_sid = os.environ['TWILIO_ACCOUNT_SID']
+    # auth_token = os.environ['TWILIO_AUTH_TOKEN']
+    # client = Client(account_sid, auth_token)
+    # message = client.messages.create(
+    #                           body='Hi there',
+    #                           from_='+16206229043',
+    #                           to='+918128722990'
+    #                       )
     print(f"OTP sent to user {user}: {otp}")
 
 def new_password(request):
