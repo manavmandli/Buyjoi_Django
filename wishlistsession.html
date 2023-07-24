@@ -7,7 +7,6 @@
 
 
 <br><br>
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -35,9 +34,9 @@
   </head>
 
   <body class="bg-gray-100">
-    <div class="container mx-auto mt-10">
-      <div class="flex flex-col md:flex-row shadow-md my-10">
-        <div class="md:w-3/4 bg-white px-4 md:px-10 py-10">
+    <div class="container mx-auto mt-5 px-4 sm:px-8">
+      <div class="flex-col md:flex-row shadow-md my-10">
+        <div class="w-full bg-white px-4 md:px-10 py-10">
           <div class="flex justify-between border-b pb-8">
             <h1 class="font-semibold text-2xl">Wishlist</h1>
             <h2 class="font-semibold text-2xl">{{total_items}} Items</h2>
@@ -51,13 +50,10 @@
             <h3
               class="font-semibold text-center text-gray-600 text-xs uppercase w-1/5 md:w-1/5"
             >
-              Price
+         Price
             </h3>
           </div>
-          {% if wishlist %}
-          {% for item in wishlist %}
           <div
-
             class="flex flex-col md:flex-row items-center hover:bg-gray-100 -mx-4 px-4 py-5"
           >
             <div class="flex w-full md:w-2/5">
@@ -84,9 +80,9 @@
               {{ item.selling_price | stringformat:'d' }}&#8377;
             </span>
             <div
-              class="flex flex-col md:flex-row w-full md:w-auto mt-4 md:mt-0"
+              class="flex flex-col md:flex-row w-full md:w-auto mt-4 md:mt-0 ml-12"
             >
-             
+              <a href="{% url 'addtocart' item.id %}" >
   <span class="text-center w-full md:w-auto font-semibold text-sm border p-2 bg-green-500 mb-4 md:mb-0 md:mr-4">
     Add to Cart
   </span>
@@ -99,7 +95,7 @@
               </span></a>
             </div>
           </div>
-          {% endfor %}
+{% endfor %}
           {% else %}
           <div>
         <h1 class="text-xl text-center w-[80%] mx-auto font-semibold leading-9 text-gray-800">Oh! You haven't any product in wishlist, Checkout your favourite items.</h1>
@@ -122,64 +118,20 @@
             Continue Shopping
           </a>
         </div>
-        <div id="summary" class="md:w-1/4 px-8 py-10">
-          <h1 class="font-semibold text-2xl border-b pb-8">Order Summary</h1>
-          <div class="flex justify-between mt-10 mb-5">
-            <span class="font-semibold text-sm uppercase">Items {{total_items}}</span>
-            <span class="font-semibold text-sm">{{total_amount}}</span>
-          </div>
-          <div>
-            <label class="font-medium inline-block mb-3 text-sm uppercase"
-              >Shipping</label
-            >
-            <select class="block p-2 text-gray-600 w-full text-sm">
-              <option>Standard shipping - $10.00</option>
-            </select>
-          </div>
-          <div class="py-10">
-            <label
-              for="promo"
-              class="font-semibold inline-block mb-3 text-sm uppercase"
-              >Promo Code</label
-            >
-            <input
-              type="text"
-              id="promo"
-              placeholder="Enter your code"
-              class="p-2 text-sm w-full"
-            />
+        <div class="mt-2 float-right">
+          <div
+            class="flex font-semibold justify-between py-6 text-xl uppercase"
+          >
+            <span class="mr-20">Total cost</span>
+            <span>{{total_amount}}</span>
           </div>
           <button
-            class="bg-red-500 hover:bg-red-600 px-5 py-2 text-sm text-white uppercase"
+            class="bg-indigo-500 font-semibold hover:bg-indigo-600 py-3 text-sm text-white uppercase w-full"
           >
-            Apply
+            Added to Cart
           </button>
-          <div class="border-t mt-8">
-            <div
-              class="flex font-semibold justify-between py-6 text-sm uppercase"
-            >
-              <span>Total cost</span>
-              <span>{{total_amount}}</span>
-            </div>
-            <button
-              class="bg-indigo-500 font-semibold hover:bg-indigo-600 py-3 text-sm text-white uppercase w-full"
-            >
-             <a href="{% url 'wishlisttocart' %}">Add to Cart</a>
-            </button>
-          </div>
         </div>
       </div>
     </div>
   </body>
 </html>
-
-
-
-
-
-
-
-{% include 'homesupport.html' %} {% include 'footer.html' %} 
-
-
-{% endblock content %}

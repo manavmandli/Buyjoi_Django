@@ -1,3 +1,12 @@
+{% extends 'main.html' %} {% load tailwind_tags %} {% load static %} 
+{% block title %} Shopping Cart | {% endblock title %}
+{% block content %}
+
+
+{% include 'navbar.html' %}
+
+
+<br><br>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -30,7 +39,7 @@
         <div class="w-full bg-white px-4 md:px-10 py-10">
           <div class="flex justify-between border-b pb-8">
             <h1 class="font-semibold text-2xl">Wishlist</h1>
-            <h2 class="font-semibold text-2xl">3 Items</h2>
+            <h2 class="font-semibold text-2xl">{{total_items}} Items</h2>
           </div>
           <div class="flex flex-col md:flex-row mt-4 md:mt-10 mb-5">
             <h3
@@ -41,14 +50,11 @@
             <h3
               class="font-semibold text-center text-gray-600 text-xs uppercase w-1/5 md:w-1/5"
             >
-              Original Price
-            </h3>
-            <h3
-              class="font-semibold text-center text-gray-600 text-xs uppercase w-1/5 md:w-1/5"
-            >
-              Selling Price
+             Price
             </h3>
           </div>
+          {% if wishlist %}
+          {% for item in wishlist %}
           <div
             class="flex flex-col md:flex-row items-center hover:bg-gray-100 -mx-4 px-4 py-5"
           >
@@ -56,46 +62,48 @@
               <div class="w-20">
                 <img
                   class="h-24"
-                  src="https://drive.google.com/uc?id=18KkAVkGFvaGNqPy2DIvTqmUH_nk39o3z"
+                  src="{{ item.product.product_image1.url }}"
                   alt=""
                 />
               </div>
               <div class="flex flex-col justify-between ml-4 flex-grow">
-                <span class="font-bold text-sm">Iphone 6S</span>
-                <span class="text-red-500 text-xs">Apple</span>
+                <span class="font-bold text-sm">{{ item.product.name }}</span>
+                <span class="text-red-500 text-xs">{{item.product.category}}</span>
                 <a
-                  href="#"
+                  href="{% url 'productview' item.product.category.slug item.product.slug %}"
                   class="font-semibold hover:text-red-500 text-gray-500 text-xs"
-                  >Remove</a
+                  >View More</a
                 >
               </div>
             </div>
             <span
               class="text-center w-full md:w-1/5 font-semibold text-sm mt-4 md:mt-0"
             >
-              $400.00
-            </span>
-            <span
-              class="text-center w-full md:w-1/5 font-semibold text-sm mt-4 md:mt-0"
-            >
-              $400.00
+              {{ item.product.selling_price | stringformat:'d' }}&#8377;
             </span>
             <div
               class="flex flex-col md:flex-row w-full md:w-auto mt-4 md:mt-0 ml-12"
             >
+            <a href="{% url 'addtocart' item.product.id %}" ></a>
               <span
                 class="text-center w-full md:w-auto font-semibold text-sm border p-2 bg-green-500 mb-4 md:mb-0 md:mr-4"
               >
                 Add to Cart
-              </span>
+              </span></a>
+              <a href="{% url 'deletewishlistitem' item.product.id %}"></a>
               <span
                 class="text-center w-full md:w-auto font-semibold text-sm border p-2 bg-green-500"
               >
                 Remove
-              </span>
+              </span></a>
             </div>
           </div>
-
+{% endfor %}
+          {% else %}
+        <div>
+           <h1 class="text-xl text-center w-[80%] mx-auto font-semibold leading-9 text-gray-800">Oh! You haven't any product in wishlist, Checkout your favourite items.</h1>
+        </div>
+          {% endif %}
           <!-- More product items -->
 
           <a
@@ -118,15 +126,19 @@
             class="flex font-semibold justify-between py-6 text-xl uppercase"
           >
             <span class="mr-20">Total cost</span>
-            <span>$600</span>
+            <span>{{total_amount}}</span>
           </div>
           <button
-            class="bg-indigo-500 font-semibold hover:bg-indigo-600 py-3 text-sm text-white uppercase w-full"
-          >
-            Added to Cart
-          </button>
+              class="bg-indigo-500 font-semibold hover:bg-indigo-600 py-3 text-sm text-white uppercase w-full"
+            >
+             <a href="{% url 'wishlisttocart' %}">Add to Cart</a>
+            </button>
         </div>
       </div>
     </div>
   </body>
 </html>
+{% include 'homesupport.html' %} {% include 'footer.html' %} 
+
+
+{% endblock content %}
